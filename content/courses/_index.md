@@ -1,15 +1,15 @@
 ---
-title: "Reference"
+title: "Courses"
 description: ""
 summary: ""
-date: 2023-09-07T16:12:37+02:00
-lastmod: 2023-09-07T16:12:37+02:00
+date: 2023-09-07T16:12:03+02:00
+lastmod: 2023-09-07T16:12:03+02:00
 draft: false
 menu:
-  docs:
+  courses:
     parent: ""
-    identifier: "reference-22e9ba8aefa7ef9891199cf8db3a08cd"
-weight: 900
+    identifier: "courses-9602b15bad02600f3883f55e2ade6b81"
+weight: 999
 toc: true
 seo:
   title: "" # custom title (optional)
