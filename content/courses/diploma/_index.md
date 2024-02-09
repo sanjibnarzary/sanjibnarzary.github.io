@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Diploma"
 description: ""
 summary: ""
 date: 2024-02-09T16:06:50+02:00
@@ -10,7 +10,7 @@ menu:
     parent: ""
     identifier: "cbios-4e0d0e0f89f7decc11eaad4ae9193018"
 weight: 800
-toc: true
+toc: false
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
