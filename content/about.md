@@ -13,7 +13,22 @@ seo:
   noindex: false # false (default) or true
 ---
 Hi there!
-Thank you for stopping by. I am Sanjib Narzary, working as an Assistant Professor in the department of Computer Science and Engineering, Central Institute of Technology Kokrajhar, a Deemed to-be University under the Government of India.
+Thank you for stopping by. I am Sanjib Narzary, working as an Assistant Professor in the department of Computer Science and Engineering at Central Institute of Technology Kokrajhar, a Deemed to-be University under the Government of India.
+
+I have more than 11+ years of experiences in teaching. I have taught the following course in different levels
+  - ATM Networks, Undergraduate (B.Tech), (Theory)
+  - Blockchain Technology, Undergraduate (B.Tech), (Theory)
+  - Computer Networking, Diploma, (Theory + Lab)
+  - Cryptography and Network Security, Diploma, (Theory + Lab)
+  - Cryptography and Network Security, Undergraduate (B.Tech), (Theory)
+  - Data Structures using C, Diploma, (Theory + Lab)
+  - Information Security, Undergraduate (B.Tech), (Theory + Lab)
+  - 
+  - Object Oriented Methodology
+  - System Programming, Undergraduate (B.Tech)
+  - Speech and Natural Language Processing, Undergraduate (B.Tech), (Theory)
+  - Web and Internet Technology, ndergraduate (B.Tech), (Theory)
+ administrative works, maintaining and managing network infrastructures of our organization, including linux servers (that include bare metal, containerised), email servers (setting up of open source email system or maintaining and managing Google Workspace)
 
 
 ## Disclaimer:
