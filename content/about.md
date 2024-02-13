@@ -15,7 +15,9 @@ seo:
 Hi there!
 Thank you for stopping by. I am Sanjib Narzary, working as an Assistant Professor in the department of Computer Science and Engineering at Central Institute of Technology Kokrajhar, a Deemed to-be University under the Government of India.
 
-I have more than 11+ years of experiences in teaching. I have taught the following course in different levels
+
+## Courses Taught
+I have more than 11+ years of experiences in teaching. I have taught the following courses in different levels
   - Advanced Cryptography and Information Security, Graduate (M.Tech), (Theory)
     - Jul-Dec, 2020
   - ATM Networks, Undergraduate (B.Tech), (Theory)
@@ -45,7 +47,49 @@ I have more than 11+ years of experiences in teaching. I have taught the followi
   - Web and Internet Technology, ndergraduate (B.Tech), (Theory)
     - July-Dec, 2023 
     - July-Dec, 2022
- administrative works, maintaining and managing network infrastructures of our organization, including linux servers (that include bare metal, containerised), email servers (setting up of open source email system or maintaining and managing Google Workspace)
+
+## Administrative Tasks Undertaken
+I have undertaken the following task as part of aministration in my capacity.
+  - Faculty Incharge, Institute Website and Networking
+    - 2023 - till date, FIC Created on 2020-2023
+  - Member of Campus Networking, Firewall and Security
+    - 2018-2020
+  - Website Incharge
+    - 2013-2018
+  - Head of Department, Computer Science and Engineering
+    - 2015-2017
+  - Member/Relation of Admission Committee
+    - 2013-2023
+
+## Technology/Application Specific knowledge
+I am very much pond of open source softwares. I have tried almost most of the open source softwares. I am always eager to learn a new thing. If you find any beautiful technology let me know it.
+  - Linux (In student days I enjoyed with Fedora, RHEL) but I use Ubuntu for any work.
+  - Unix (Open Solaris)
+  - Windows XP, Vista, 8, 10 or 11
+  - I develop flutter based application in Apple Mac system
+  - brew and chocolate
+  - Anaconda for my Python Environment
+  - Texworks and Texmaker for my latex report
+  - HTML, CSS, JavaScript and PhP are my first choice
+  - Recently I have added flutter, dart and python
+  - C is what I used to teach in Diploma
+  - NodeJS is everywhere in my systems
+  - Python inside conda environment for CUDA based projects I mean machine learning :)
+  - Frameworks (React, React Native, NextJS, Laravel)
+  - I access only Digital Ocean and Linode cloud
+  - Github pages with Hugo and Jekyll though I don't know Go language
+  - MySQL and mariadb are my defaults but Postgres, MongoDB and supabase are in my list
+  - Tested Odoo, ErpNext
+  - Build containerised app in Docker 
+  - Google Workspace is what I manage every day :)
+  - Matlab: I know how to install Matlab server and distribute to clients but use it very less
+  - In my wishlist
+    - Ruby and Ruby on Rail
+    - Go
+  
+
+
+
 
 
 ## Disclaimer:
