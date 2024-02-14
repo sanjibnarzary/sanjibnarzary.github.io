@@ -11,5 +11,3 @@ seo:
  canonical: "" # custom canonical URL (optional)
  noindex: false # false (default) or true
 ---
-
-[![Hits](https://hits.sh/github.com/silentsoft/hits.svg)](https://hits.sh/github.com/silentsoft/hits/)
