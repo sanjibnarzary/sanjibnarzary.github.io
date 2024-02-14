@@ -11,3 +11,4 @@ seo:
  canonical: "" # custom canonical URL (optional)
  noindex: false # false (default) or true
 ---
+  [![HitCount](https://hits.dwyl.com/sanjibnarzary/sanjibnarzarygithubio.svg?style=flat-square)](http://hits.dwyl.com/sanjibnarzary/sanjibnarzarygithubio)
