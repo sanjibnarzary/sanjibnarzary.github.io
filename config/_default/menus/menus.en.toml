@@ -29,8 +29,8 @@
   url = "/tutorial/lorem/"
 
 [[main]]
-  name = "Personal"
-  url = "/docs/bio/sanjib-narzary/"
+  name = "About"
+  url = "/about"
 # url = "/docs/1.0/prologue/introduction/"
   weight = 10
 
