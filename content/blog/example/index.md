@@ -2,8 +2,8 @@
 title: "Automated AI based Summarization Engine for News"
 description: "AI based summarization engine that supports 208 languages around the world"
 summary: "AISumNews summarizes news using AI and support 208 languages around the world"
-date: 2024-03-04T16:27:22+02:00
-lastmod: 2024-03-04T16:27:22+02:00
+date: 2024-03-03T16:27:22+02:00
+lastmod: 2024-03-03T16:27:22+02:00
 draft: false
 weight: 50
 categories: []
