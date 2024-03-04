@@ -44,7 +44,7 @@ I have more than 11+ years of experiences in teaching. I have taught the followi
   - Speech and Natural Language Processing, Undergraduate (B.Tech), (Theory)
     - Jan-Jun, 2024
     - Jan-Jun, 2023
-  - Web and Internet Technology, ndergraduate (B.Tech), (Theory)
+  - Web and Internet Technology, Undergraduate (B.Tech), (Theory)
     - July-Dec, 2023 
     - July-Dec, 2022
 
@@ -74,7 +74,7 @@ I am very much pond of open source softwares. I have tried almost most of the op
   - Recently I have added flutter, dart and python
   - C is what I used to teach in Diploma
   - NodeJS is everywhere in my systems
-  - Python inside conda environment for CUDA based projects I mean machine learning :)
+  - Python inside conda environment for CUDA based projects
   - Frameworks (React, React Native, NextJS, Laravel)
   - I access only Digital Ocean and Linode cloud
   - Github pages with Hugo and Jekyll though I don't know Go language

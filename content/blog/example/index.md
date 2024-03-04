@@ -1,7 +1,7 @@
 ---
-title: "Example Post"
-description: "Just an example post."
-summary: "You can use blog posts for announcing product updates and features."
+title: "Automated AI based Summarization Engine for News"
+description: "AI based summarization engine that supports 208 languages around the world"
+summary: "AISumNews summarizes news using AI and support 208 languages around the world"
 date: 2023-09-07T16:27:22+02:00
 lastmod: 2023-09-07T16:27:22+02:00
 draft: false
@@ -18,8 +18,17 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Well-thought-through product announcements will help increase feature awareness and engage users with new functionality. Just like [sharing your public roadmap](https://canny.io/blog/should-you-have-a-public-roadmap/), it's also a great way to let potential customers see that you're constantly improving.
+AISumNews is summarized news reading application supporting multiple languages around the world. The source code is hosted in the [aisumnews](https://github.com/aisumnews/aisumnews)
 
-## Further reading
+The main purpose of the application is used generative AI based technology to sumarized news content and translate to respective languages. Currently only 208 (languages) are supported.
 
-- Read [How to announce product updates and features](https://canny.io/blog/announce-product-updates-features/)
+## Architecture
+There are two system 
+ - Backend
+ - Front end
+
+## Backend System
+The backend system gather the news and generate title and content based on original news. Which is not shared publicly.
+
+## Frontend System
+The frontend system is open sourced and everyone can view and modify it. It is available at [https://github.com/aisumnews/aisumnews](https://github.com/aisumnews/aisumnews)
