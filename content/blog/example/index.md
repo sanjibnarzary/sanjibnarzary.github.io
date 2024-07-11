@@ -20,7 +20,7 @@ seo:
 
 AISumNews is summarized news reading application supporting multiple languages around the world. The source code is hosted in the [aisumnews](https://github.com/aisumnews/aisumnews)
 
-The main purpose of the application is used generative AI based technology to sumarized news content and translate to respective languages. Currently only 208 (languages) are supported.
+The main purpose of the application is used generative AI based technology to sumarized news content and translate to respective languages. Currently only 208 (languages) are supported. This system lets you read news in your language.
 
 ## Architecture
 There are two system 
