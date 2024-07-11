@@ -19,6 +19,7 @@ Thank you for stopping by. I am Sanjib Narzary, working as an Assistant Professo
 ## Courses Taught
 I have more than 11+ years of experiences in teaching. I have taught the following courses in different levels
   - Advanced Cryptography and Information Security, Graduate (M.Tech), (Theory)
+    - Jul-Dec, 2024
     - Jul-Dec, 2020
   - ATM Networks, Undergraduate (B.Tech), (Theory)
   - Blockchain Technology, Undergraduate (B.Tech), (Theory)
@@ -26,6 +27,10 @@ I have more than 11+ years of experiences in teaching. I have taught the followi
   - Computer Communication and Networking, Diploma, (Theory + Lab)
     - Jul-Dec, 2018
   - Cryptography and Network Security, Diploma, (Theory + Lab)
+    - Jul-Dec, 2024
+    - Jul-Dec, 2023
+    - Jul-Dec, 2022
+    - Jul-Dec, 2021
   - Cryptography and Network Security, Undergraduate (B.Tech), (Theory)
   - Data Structure using C, Diploma, (Theory + Lab)
     - Jan-Jun, 2024
@@ -45,11 +50,13 @@ I have more than 11+ years of experiences in teaching. I have taught the followi
     - Jan-Jun, 2024
     - Jan-Jun, 2023
   - Web and Internet Technology, Undergraduate (B.Tech), (Theory)
+    - Jul-Dec, 2024
     - July-Dec, 2023 
     - July-Dec, 2022
 
 ## Administrative Tasks Undertaken
 I have undertaken the following task as part of aministration in my capacity.
+  - Nodal Occicer, Samarth eGov ERP Suite
   - Faculty Incharge, Institute Website and Networking
     - 2023 - till date, FIC Created on 2020-2023
   - Member of Campus Networking, Firewall and Security
