@@ -2,8 +2,8 @@
 title: "CIT Kokrajhar Ushers in a New Era of Digital Workflows with the Unveiling of Samarth eGov ERP Suite"
 description: "CIT Kokrajhar Ushers in a New Era of Digital Workflows with the Unveiling of Samarth eGov ERP Suite"
 summary: "CIT Kokrajhar Ushers in a New Era of Digital Workflows with the Unveiling of Samarth eGov ERP Suite"
-date: 2024-07-10T18:27:22+02:00
-lastmod: 2024-07-10T18:27:22+02:00
+date: 2024-10-07T18:27:22+02:00
+lastmod: 2024-10-09T18:27:22+02:00
 draft: false
 weight: 51
 categories: []
