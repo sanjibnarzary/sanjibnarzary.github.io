@@ -26,7 +26,7 @@ I have more than 11+ years of experiences in teaching. I have taught the followi
     - Jan-Jun, 2024
   - Computer Communication and Networking, Diploma, (Theory + Lab)
     - Jul-Dec, 2018
-  - Cryptography and Network Security, Diploma, (Theory + Lab)
+  - Cryptography and Network Security, Diploma, ([Theory](https://sanjibnarzary.github.io/dcse504/) + Lab)
     - Jul-Dec, 2024
     - Jul-Dec, 2023
     - Jul-Dec, 2022
