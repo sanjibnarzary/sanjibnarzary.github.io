@@ -24,6 +24,8 @@ seo:
 -->
 **Kokrajhar, Assam – 11/07/2024** – Today, CIT Kokrajhar proudly announces the official launch of the Samarth eGov Enterprise Resource Planning (ERP) suite. This innovative system marks a significant leap forward in streamlining administrative processes and workflows at the institution.
 
+![Inauguration of Samarth eGov at CIT Kokrajhar](images/iauguration.png)
+
 **A Commitment to Efficiency**
 
 The Samarth eGov ERP suite is designed to enhance efficiency, improve data management, and empower faculty, staff, and students through a user-friendly digital platform.  This comprehensive suite encompasses various modules encompassing academics, administration, student services, human resources, governance, accounting, and finance.
