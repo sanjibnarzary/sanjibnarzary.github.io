@@ -1,7 +1,7 @@
 ---
 title: "CIT Kokrajhar Ushers in a New Era of Digital Workflows with the Unveiling of Samarth eGov ERP Suite"
 description: "CIT Kokrajhar Ushers in a New Era of Digital Workflows with the Unveiling of Samarth eGov ERP Suite"
-summary: "CIT Kokrajhar Ushers in a New Era of Digital Workflows with the Unveiling of Samarth eGov ERP Suite"
+summary: ""
 date: 2024-07-11T18:27:22+02:00
 lastmod: 2024-07-11T18:27:22+02:00
 draft: false
@@ -18,9 +18,10 @@ seo:
   noindex: false # false (default) or true
 ---
 
+<!--
 
 **CIT Kokrajhar Ushers in a New Era of Digital Workflows with the Unveiling of Samarth eGov ERP Suite**
-
+-->
 **Kokrajhar, Assam – 11/07/2024** – Today, CIT Kokrajhar proudly announces the official launch of the Samarth eGov Enterprise Resource Planning (ERP) suite. This innovative system marks a significant leap forward in streamlining administrative processes and workflows at the institution.
 
 **A Commitment to Efficiency**
