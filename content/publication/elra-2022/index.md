@@ -22,20 +22,20 @@ seo:
 
 **CIT Kokrajhar Ushers in a New Era of Digital Workflows with the Unveiling of Samarth eGov ERP Suite**
 -->
-**Generating Monolingual Dataset for Low Resource Language Bodo from old books using Google Keep**
-
 ***Proceedings of the Thirteenth Language Resources and Evaluation Conference***
 
 ***June, 2022***
+
 ```
-**Sanjib Narzary**, Maharaj Brahma, Mwnthai Narzary, Gwmsrang Muchahary, Pranav Kumar Singh, Apurbalal Senapati, Sukumar Nandi, Bidisha Som
+Sanjib Narzary, Maharaj Brahma, Mwnthai Narzary, Gwmsrang Muchahary, Pranav Kumar Singh, Apurbalal Senapati, Sukumar Nandi, Bidisha Som
 ```
 
 **Abstract**
+
 Bodo is a scheduled Indian language spoken largely by the Bodo community of Assam and other northeastern Indian states. Due to a lack of resources, it is difficult for young languages to communicate more effectively with the rest of the world. This leads to a lack of research in low-resource languages. The creation of a dataset is a tedious and costly process, particularly for languages with no participatory research. This is more visible for languages that are young and have recently adopted standard writing scripts. In this paper, we present a methodology using Google Keep for OCR to generate a monolingual Bodo corpus from different books. In this work, a Bodo text corpus of 192,327 tokens and 32,268 unique tokens is generated using free, accessible, and daily-usable applications. Moreover, some essential characteristics of the Bodo language are discussed that are neglected by Natural Language Progressing (NLP) researchers.
 
 
-** Citation**
+**Citation**
 
 ```BibTex
 @inproceedings{narzary-etal-2022-generating,
