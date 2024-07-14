@@ -22,7 +22,7 @@ seo:
 
 **CIT Kokrajhar Ushers in a New Era of Digital Workflows with the Unveiling of Samarth eGov ERP Suite**
 -->
-***11th International Conference of the North East Indian Linguistics Society (NEILS11)***
+***3rd International Conference on Computing Methodologies and Communication (ICCMC)***
 
 ***March, 2019***
 
