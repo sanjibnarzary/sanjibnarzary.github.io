@@ -5,7 +5,7 @@ summary: "AISumNews summarizes news using AI and support 208 languages around th
 date: 2024-03-03T16:27:22+02:00
 lastmod: 2024-03-03T16:27:22+02:00
 draft: false
-weight: 50
+weight: 500
 categories: []
 tags: []
 contributors: []
