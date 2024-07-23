@@ -55,59 +55,89 @@ This course provides an introduction to web and internet technologies. It covers
 **Module 1: Web Basics and Overview (6 Lectures)**
 
 Lecture 1: Introduction to Internet & World Wide Web ([https://en.wikipedia.org/wiki/Internet](https://en.wikipedia.org/wiki/Internet))
+
 Lecture 2: Web Browsers and Servers ([https://en.wikipedia.org/wiki/Web_server](https://en.wikipedia.org/wiki/Web_server))
+
 Lecture 3: Internet Services and Web Services ([https://en.wikipedia.org/wiki/Web_service](https://en.wikipedia.org/wiki/Web_service))
+
 Lecture 4: Introduction to URLs and DNS ([https://iana.org/](https://iana.org/)) ([https://www.iana.org/about/informational-booklet.pdf](https://www.iana.org/about/informational-booklet.pdf))
+
 Lecture 5: Internet Communication Protocols (HTTP, FTP, SMTP, POP, MIME) ([https://simple.wikipedia.org/wiki/Hypertext_Transfer_Protocol](https://simple.wikipedia.org/wiki/Hypertext_Transfer_Protocol)) ([https://en.wikipedia.org/wiki/File_Transfer_Protocol](https://en.wikipedia.org/wiki/File_Transfer_Protocol)) ([https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol)) ([https://simple.wikipedia.org/wiki/Post_Office_Protocol](https://simple.wikipedia.org/wiki/Post_Office_Protocol)) ([https://en.wikipedia.org/wiki/MIME](https://en.wikipedia.org/wiki/MIME))
+
 Lecture 6: Email Privacy (PGP & PEM) ([https://en.wikipedia.org/wiki/Encryption](https://en.wikipedia.org/wiki/Encryption)) ([https://datatracker.ietf.org/wg/pem/about/](https://datatracker.ietf.org/wg/pem/about/))
 
 **Module 2: Client/Server Computing (6 Lectures)**
 
 Lecture 1: Introduction to Client/Server Computing ([https://en.wikipedia.org/wiki/Client%E2%80%93server_model](https://en.wikipedia.org/wiki/Client%E2%80%93server_model))
+
 Lecture 2: Fat Client vs. Fat Server Architectures
+
 Lecture 3: N-Tiered Software Architecture ([https://en.wikipedia.org/?title=Three-tier_architecture&redirect=no](https://en.wikipedia.org/?title=Three-tier_architecture&redirect=no))
+
 Lecture 4: Middleware and its role ([https://en.wikipedia.org/wiki/Middleware](https://en.wikipedia.org/wiki/Middleware))
+
 Lecture 5: Distributed Object Models (CORBA, DCOM, JRMI, EJB) ([https://www.omg.org/spec/CORBA/1.1](https://www.omg.org/spec/CORBA/1.1)) ([https://en.wikipedia.org/wiki/Distributed_Component_Object_Model](https://en.wikipedia.org/wiki/Distributed_Component_Object_Model)) ([https://docs.oracle.com/javase/7/docs/technotes/guides/rmi/](https://docs.oracle.com/javase/7/docs/technotes/guides/rmi/)) ([https://docs.oracle.com/cd/E24329_01/web.1211/e24446/ejbs.htm](https://docs.oracle.com/cd/E24329_01/web.1211/e24446/ejbs.htm))
+
 Lecture 6: Case Studies on Client/Server Implementations
 
 **Module 3: Markup Languages and their Grammars (5 Lectures)**
 
 Lecture 1: Introduction to SGML ([https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language](https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language))
+
 Lecture 2: HTML and its elements ([https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started))
+
 Lecture 3: XHTML ([https://www.w3.org/TR/xhtml1/](https://www.w3.org/TR/xhtml1/))
+
 Lecture 4: Introduction to XML and its applications ([https://www.w3.org/XML/](https://www.w3.org/XML/))
+
 Lecture 5: Introduction to XSL, CSS, and DTDs ([https://www.w3schools.com/xml/xsl_transformation.asp](https://www.w3schools.com/xml/xsl_transformation.asp)) ([https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)) ([https://en.wikipedia.org/wiki/Document_type_definition](https://en.wikipedia.org/wiki/Document_type_definition))
 
 **Module 4: Client-Side Programming (12 Lectures)**
 
 Lectures 1-4: HTML in detail - Structure, Tags, Attributes ([https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started))
+
 Lectures 5-7: CSS - Selectors, Properties, Positioning ([https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS))
+
 Lectures 8-10: JavaScript - Introduction, Syntax, Functions, DOM Manipulation ([https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript))
+
 Lectures 11-12: Introduction to AJAX and jQuery ([https://en.wikipedia.org/wiki/Ajax_%28programming%29](https://en.wikipedia.org/wiki/Ajax_%28programming%29)) ([https://jquery.com/](https://jquery.com/))
 
 **Module 5: Web Browser (6 Lectures)**
 
 Lecture 1: Web Browser Architecture ([https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/))
+
 Lecture 2: Document Object Model (DOM) ([https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model))
+
 Lecture 3: DOM Tree and Render Tree Concepts
+
 Lecture 4: Rendering Engine and its functionalities
+
 Lecture 5: Case Studies on Browser Architectures (Mozilla Firefox, Google Chrome, Internet Explorer)
+
 Lecture 6: Web Server Architecture (Focus on Apache)
 
 **Module 6: Web Security (5 Lectures)**
 
 Lecture 1: Introduction to Web Security Threats 
+
 Lecture 2: Firewalls and Proxy Servers ([https://en.wikipedia.org/wiki/Firewall](https://en.wikipedia.org/wiki/Firewall)) ([https://en.wikipedia.org/wiki/Proxy_server](https://en.wikipedia.org/wiki/Proxy_server))
+
 Lecture 3: Cryptography for Web Security ([https://en.wikipedia.org/wiki/Cryptography](https://en.wikipedia.org/wiki/Cryptography))
+
 Lecture 4: Digital Signatures and Certificates ([https://en.wikipedia.org/wiki/Digital_signature](https://en.wikipedia.org/wiki/Digital_signature)) ([https://en.wikipedia.org/wiki/X.509_certificate](https://en.wikipedia.org/wiki/X.509_certificate))
+
 Lecture 5: Secure Communication Protocols (SSL, S-HTTP, SET, 3D Secure) ([https://en.wikipedia.org/wiki/Secure_Sockets_Layer](https://en.wikipedia.org/wiki/Secure_Sockets_Layer)) ([https://en.wikipedia.org/wiki/Secure_Hypertext_Transfer_Protocol](https://en.wikipedia.org/wiki/Secure_Hypertext_Transfer_Protocol)) ([https://en.wikipedia.org/wiki/Secure_Electronic_Transaction](https://en.wikipedia.org/wiki/Secure_Electronic_Transaction)) ([https://en.wikipedia.org/wiki/3-D_Secure](https://en.wikipedia.org/wiki/3-D_Secure))
 
+<!--
 **Additional Resources**
 
 Encourage students to explore online resources like Mozilla Developer Network (MDN) ([https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/)) and W3Schools ([https://www.w3schools.com/](https://www.w3schools.com/)) for further learning and practicing code examples.
-Consider incorporating hands-on labs or assignments for each module to solidify students' understanding of the concepts.
-Include guest lectures from industry professionals (if possible) to provide real-world insights into web development and security practices.
 
+Incorporating hands-on labs or assignments for each module to solidify students' understanding of the concepts.
+
+Guest lectures from industry professionals (if possible) to provide real-world insights into web development and security practices.
+
+-->
 **Assessment**
 
 The course assessment can be a combination of:
