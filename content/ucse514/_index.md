@@ -56,9 +56,9 @@ This course provides an introduction to web and internet technologies. It covers
 
 Lecture 1: Introduction to Internet & World Wide Web ([https://en.wikipedia.org/wiki/Internet](https://en.wikipedia.org/wiki/Internet))
 
-Lecture 2: Web Browsers and Servers ([https://en.wikipedia.org/wiki/Web_server](https://en.wikipedia.org/wiki/Web_server))
+Lecture 2: Web Browsers and Servers [PDF](files/Module%201%20Lecture%202%20Web%20Browsers%20and%20Web%20Servers.pdf) ([https://en.wikipedia.org/wiki/Web_server](https://en.wikipedia.org/wiki/Web_server))
 
-Lecture 3: Internet Services and Web Services ([https://en.wikipedia.org/wiki/Web_service](https://en.wikipedia.org/wiki/Web_service))
+Lecture 3: Internet Services and Web Services [PDF](files/Module%201%20Lecture%203%20What%20are%20Web%20Services.pdf) ([https://en.wikipedia.org/wiki/Web_service](https://en.wikipedia.org/wiki/Web_service))
 
 Lecture 4: Introduction to URLs and DNS ([https://iana.org/](https://iana.org/)) ([https://www.iana.org/about/informational-booklet.pdf](https://www.iana.org/about/informational-booklet.pdf))
 
