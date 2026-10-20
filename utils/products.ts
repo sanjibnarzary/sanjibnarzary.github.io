@@ -33,6 +33,7 @@ export interface ProductConfig {
 	image?: string;
 	playStoreUrl?: string;
 	appStoreUrl?: string;
+	apkUrl?: string;
 	aliases?: string[];
 }
 
@@ -48,10 +49,15 @@ export const getProductConfig = (product: string): ProductConfig => {
 		ctaHref: `/products/${product}/docs/overview/introduction`,
 	};
 	const file = path.join(PRODUCTS_PATH, product, "product.json");
-	return fs.existsSync(file)
+	const config: ProductConfig = fs.existsSync(file)
 		? { ...defaults, ...JSON.parse(fs.readFileSync(file, "utf8")) }
 		: defaults;
+	return hasProductApk(product) ? { ...config, apkUrl: `/downloads/${product}.apk` } : config;
 };
+
+// data/products/<product>/apk/app-release.apk is copied to public/downloads/<product>.apk by scripts/copy-apks.ts
+export const hasProductApk = (product: string) =>
+	fs.existsSync(path.join(PRODUCTS_PATH, product, "apk", "app-release.apk"));
 
 // top-level data/products/<product>/*.mdx files (about, privacy, terms, ...) are standalone pages;
 // index.mdx is the product home page and is excluded here

@@ -107,20 +107,17 @@ export const Header = ({ children, gitHubLink, ghost }: HeaderProps) => {
 						</Flex>
 
 						<div className={styles.HeaderProductLinksContainer}>
-							<HeaderProductLink
-								href="/"
-								active={pathname === "/" || pathname?.startsWith("/themes")}
-							>
-								Themes
+							<HeaderProductLink href="/" active={pathname === "/"}>
+								Home
 							</HeaderProductLink>
-							<HeaderProductLink href="/primitives" active={pathname?.startsWith("/primitives")}>
-								Primitives
+							<HeaderProductLink href="/products" active={pathname?.startsWith("/products")}>
+								Products
 							</HeaderProductLink>
-							<HeaderProductLink href="/icons" active={pathname?.startsWith("/icons")}>
-								Icons
+							<HeaderProductLink href="/projects" active={pathname?.startsWith("/projects")}>
+								Projects
 							</HeaderProductLink>
-							<HeaderProductLink href="/colors" active={pathname?.startsWith("/colors")}>
-								Colors
+							<HeaderProductLink href="/about" active={pathname?.startsWith("/about")}>
+								About
 							</HeaderProductLink>
 						</div>
 

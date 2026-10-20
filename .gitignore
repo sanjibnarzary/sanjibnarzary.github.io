@@ -44,3 +44,7 @@ next-env.d.ts
 
 # cloudflare
 .wrangler
+
+# APKs copied from data/products/*/apk (built by `pnpm copy:apks`)
+#/public/downloads
+data/products/*/apk

@@ -88,24 +88,26 @@ export default function ProductsIndex() {
                       View product →
                     </Text>
                   </NextLink>
-                  {(product.playStoreUrl || product.appStoreUrl) && (
+                  {(product.playStoreUrl || product.apkUrl) && (
                     <Flex gap="2" wrap="wrap">
                       {product.playStoreUrl && (
                         <StoreLink
                           href={product.playStoreUrl}
                           label="Get it on Google Play"
+                          external
                         >
                           <PlayStoreIcon />
                           Google Play
                         </StoreLink>
                       )}
-                      {product.appStoreUrl && (
+                      {product.apkUrl && (
                         <StoreLink
-                          href={product.appStoreUrl}
-                          label="Download on the App Store"
+                          href={product.apkUrl}
+                          label={`Download ${product.name} APK`}
+                          download
                         >
-                          <AppStoreIcon />
-                          App Store
+                          <DownloadIcon />
+                          Direct APK
                         </StoreLink>
                       )}
                     </Flex>
@@ -126,17 +128,21 @@ export default function ProductsIndex() {
 function StoreLink({
   href,
   label,
+  download,
+  external,
   children,
 }: {
   href: string;
   label: string;
+  download?: boolean;
+  external?: boolean;
   children: React.ReactNode;
 }) {
   return (
     <a
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
+      download={download}
+      {...(external && { target: "_blank", rel: "noopener noreferrer" })}
       aria-label={label}
       style={{
         display: "inline-flex",
@@ -156,6 +162,24 @@ function StoreLink({
   );
 }
 
+function DownloadIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14" />
+    </svg>
+  );
+}
+
 function PlayStoreIcon() {
   return (
     <svg
@@ -165,21 +189,7 @@ function PlayStoreIcon() {
       fill="currentColor"
       aria-hidden="true"
     >
-      <path d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l9.9-10.2L3.6 1.8zm10.6 9.2 2.9-2.9L5.4 1.6c-.4-.2-.8-.2-1.1 0L14.2 11zm0 2L4.3 22.4c.3.2.7.2 1.1 0l11.7-6.5-2.9-2.9zm3.9-3.1-3.2 3.1 3.2 3.2 3.6-2c1-.6 1-1.6 0-2.2l-3.6-2.1z" />
-    </svg>
-  );
-}
-
-function AppStoreIcon() {
-  return (
-    <svg
-      width="16"
-      height="16"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      aria-hidden="true"
-    >
-      <path d="M16.4 12.6c0-2.4 2-3.5 2.1-3.6-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.400 1.200 9.800.8 1.200 1.800 2.500 3 2.400 1.200 0 1.700-.8 3.100-.8s1.900.8 3.200.7c1.300 0 2.200-1.200 3-2.400.9-1.400 1.300-2.700 1.300-2.800-.1 0-2.500-1-2.500-3.900zM14 5.400c.7-.8 1.100-1.900 1-3-.9 0-2.100.6-2.800 1.400-.6.700-1.100 1.800-1 2.900 1.100.1 2.100-.5 2.800-1.300z" />
+      <path d="M3.6 2.3a1.4 1.4 0 0 0-.6 1.2v17a1.4 1.4 0 0 0 .6 1.2L13.3 12 3.6 2.3zm10.4 8.3 2.7-2.7L5.9 1.8l8.1 8.8zm0 2.8-8.1 8.8 10.8-6.1L14 13.4zm3.5-1.4-3 1.7 3 1.7 2.6-1.5a1 1 0 0 0 0-1.8l-2.6-1.5-.0.4z" />
     </svg>
   );
 }

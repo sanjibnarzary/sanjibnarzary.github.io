@@ -4,8 +4,9 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "pnpm build:search && next dev",
-		"build": "pnpm build:search && next build && pnpm build:markdown && pnpm check:export",
+		"dev": "pnpm copy:apks && pnpm build:search && next dev",
+		"build": "pnpm copy:apks && pnpm build:search && next build && pnpm build:markdown && pnpm check:export",
+		"copy:apks": "tsx scripts/copy-apks.ts",
 		"build:search": "tsx scripts/build-search-index.ts",
 		"build:markdown": "tsx scripts/build-markdown.ts",
 		"check:export": "tsx scripts/check-export.ts",

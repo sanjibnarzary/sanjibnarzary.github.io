@@ -1,8 +1,14 @@
 {
 	"name": "PetPal",
-	"title": "Virtual Pet Assistant",
-	"headline": "Capture every photo with its location",
-	"description": "Virtual pet assistant that helps you keep track of your pet's location and activities.",
+	"title": "PetPal: Virtual Pet Companion Assistant",
+	"headline": "Your virtual pet companion that helps you stay connected with your furry friend",
+	"description": "PetPal is a virtual pet companion that helps you stay connected with your furry friend. It provides a range of features to keep your pet happy and healthy, including feeding reminders, activity tracking, and virtual playtime.",
 	"ctaLabel": "Get started",
-	"ctaHref": "/products/petpal/docs/overview/introduction"
+	"ctaHref": "/products/petpal/docs/overview/introduction",
+	"aliases": [
+		"petpal"
+	],
+	"playStoreUrl": "https://play.google.com/store/apps/details?id=REPLACE_ME",
+	"appStoreUrl": "https://apps.apple.com/app/idREPLACE_ME",
+	"apkUrl": "/downloads/petpal.apk"
 }

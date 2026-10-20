@@ -1,6 +1,6 @@
 {
-	"name": "GPS Map Camera",
-	"title": "GPS Map Camera",
+	"name": "GPS Camera Map",
+	"title": "GPS Camera Map",
 	"headline": "Capture every photo with its location",
 	"description": "Stamp photos with GPS coordinates, address, date and time, and a map preview.",
 	"ctaLabel": "Get started",
@@ -9,5 +9,6 @@
 		"gps-camera-map"
 	],
 	"playStoreUrl": "https://play.google.com/store/apps/details?id=REPLACE_ME",
-	"appStoreUrl": "https://apps.apple.com/app/idREPLACE_ME"
+	"appStoreUrl": "https://apps.apple.com/app/idREPLACE_ME",
+	"apkUrl": "/downloads/gps-camera-map.apk"
 }
