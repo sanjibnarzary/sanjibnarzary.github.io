@@ -1,4 +1,5 @@
 "use client";
+import type { Route } from "next";
 import * as React from "react";
 import NextLink from "next/link";
 import { Box, Text, Link, Flex, Container, Heading } from "@radix-ui/themes";
@@ -108,7 +109,17 @@ const FocusArea = React.forwardRef<HTMLDivElement, React.ComponentProps<"div">>(
 	);
 });
 
-export const PrimitivesHero = () => {
+export const PrimitivesHero = ({
+	headline = "Core building blocks for your design system",
+	description = "Unstyled, accessible, open source React primitives for high-quality web apps and design systems.",
+	ctaLabel = "Get started",
+	ctaHref = "/primitives/docs/overview/introduction",
+}: {
+	headline?: string;
+	description?: string;
+	ctaLabel?: string;
+	ctaHref?: string;
+}) => {
 	const lastUsedFocusArea = React.useRef<HTMLElement | null>(null);
 	const isRoving = React.useRef(false);
 
@@ -257,16 +268,15 @@ export const PrimitivesHero = () => {
 				<Box mb="6">
 					<Box mb="5">
 						<SerifHeading mb="3" style={{ maxWidth: 560 }}>
-							Core building blocks for your design system
+							{headline}
 						</SerifHeading>
 						<Text size="5" as="p" mb="6" color="gray" style={{ maxWidth: 520 }}>
-							Unstyled, accessible, open source React primitives for high-quality web apps and
-							design systems.
+							{description}
 						</Text>
 					</Box>
 					<Button asChild size={{ initial: "3", xs: "4" }} color="gray" highContrast>
-						<NextLink href="/primitives/docs/overview/introduction">
-							Get started
+						<NextLink href={ctaHref as Route}>
+							{ctaLabel}
 							<svg
 								width="14"
 								height="14"
