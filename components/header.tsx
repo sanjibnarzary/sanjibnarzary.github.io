@@ -114,7 +114,7 @@ export const Header = ({ children, gitHubLink, ghost }: HeaderProps) => {
 								Research
 							</HeaderProductLink>
 							<HeaderProductLink href="/products" active={pathname?.startsWith("/products")}>
-								Products
+								Apps
 							</HeaderProductLink>
 							<HeaderProductLink href="/projects" active={pathname?.startsWith("/projects")}>
 								Projects

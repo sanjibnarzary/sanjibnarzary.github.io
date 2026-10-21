@@ -1,27 +1,12 @@
-import { getProductSlugParams, productBase } from "@utils/products";
-import { BoxLink } from "@components/box-link";
+import { getProductConfig, getProductSlugParams, productBase } from "@utils/products";
 import { Footer } from "@components/footer";
+import { Breadcrumbs } from "@components/breadcrumbs";
 import { MdxContent } from "@components/mdx-content";
 import { PrimitivesHeader } from "@components/primitives-header";
 import { PrimitivesMobileMenu } from "@components/primitives-mobile-menu";
-import { CaseStudyLogo, CaseStudyLogoVariant } from "@components/marketing/case-study-logo";
 import { MarketingCaption } from "@components/marketing/marketing-caption";
-import { getAllFrontmatter } from "@utils/mdx";
 import { getMdxBySlug } from "@utils/mdx";
-import { AccessibleIcon } from "radix-ui";
-import { ArrowTopRightIcon } from "@radix-ui/react-icons";
-import {
-	Avatar,
-	Box,
-	Container,
-	Flex,
-	Grid,
-	Heading,
-	Link,
-	Section,
-	Separator,
-	Text,
-} from "@radix-ui/themes";
+import { Box, Container, Link, Section, Text } from "@radix-ui/themes";
 import NextLink from "next/link";
 import { baseMetadata } from "@utils/metadata";
 import type { Metadata, Route } from "next";
@@ -32,123 +17,56 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
 	const { product, slug } = await params;
-	const DOCS_BASE = productBase(product, "case-studies");
-	const { frontmatter } = await getMdxBySlug(DOCS_BASE, slug);
+	const { name } = getProductConfig(product);
+	const { frontmatter } = await getMdxBySlug(productBase(product, "case-studies"), slug);
 	return {
 		...baseMetadata,
-		title: `${frontmatter.metaTitle} – Case studies – Radix Primitives`,
+		title: `${frontmatter.metaTitle} – Case studies – ${name}`,
 		description: frontmatter.metaDescription,
 	};
 }
 
 export default async function CaseStudy({ params }: PageProps) {
 	const { product, slug } = await params;
-	const DOCS_BASE = productBase(product, "case-studies");
-	const { frontmatter, code } = await getMdxBySlug(DOCS_BASE, slug);
-
-	const frontmatters = getAllFrontmatter(DOCS_BASE);
-	const thisIndex = frontmatters.findIndex((data) => data.slug.includes(frontmatter.slug));
-	const nextIndex = thisIndex + 1 < frontmatters.length ? thisIndex + 1 : 0;
-	const nextCaseStudy = frontmatters[nextIndex];
-
-	const extendedFrontmatter = {
-		...frontmatter,
-		nextCaseStudyTitle: nextCaseStudy.metaTitle,
-		nextCaseStudySlug: nextCaseStudy.slug,
-	} as typeof frontmatter & {
-		companyAbout: string;
-		companyUrl: string;
-		companyFounded: string;
-		companyLogoVariant: CaseStudyLogoVariant;
-		author: string;
-		authorAvatarUrl: string;
-		authorPosition: string;
-		nextCaseStudyTitle: string;
-		nextCaseStudySlug: string;
+	const { name } = getProductConfig(product);
+	const { frontmatter, code } = await getMdxBySlug(productBase(product, "case-studies"), slug);
+	const { author, authorPosition } = frontmatter as typeof frontmatter & {
+		author?: string;
+		authorPosition?: string;
 	};
 
 	return (
 		<>
 			<PrimitivesHeader />
 			<PrimitivesMobileMenu />
-			<Container mx={{ initial: "5", xs: "6", sm: "7", md: "9" }}>
+			<Container mx={{ initial: "5", xs: "6", sm: "7", md: "9" }} maxWidth="800px">
 				<Section size={{ initial: "2", md: "4" }}>
-					<Grid columns={{ md: "1fr 330px", lg: "1fr 380px" }} gap={{ md: "9" }}>
-						<Box>
-							<MarketingCaption mb="1">Case study</MarketingCaption>
-							<MdxContent code={code} frontmatter={extendedFrontmatter} scope="primitives" />
-							<Flex align="center" gap="3" mt="8">
-								<Avatar
-									size="5"
-									src={extendedFrontmatter.authorAvatarUrl}
-									aria-label={extendedFrontmatter.author}
-									fallback={null as any}
-									radius="full"
-								/>
-								<Box id="author">
-									<Text as="p" weight="bold">
-										{extendedFrontmatter.author}
-									</Text>
-									<Text as="p">{extendedFrontmatter.authorPosition}</Text>
-								</Box>
-							</Flex>
-							<Separator size="3" mt={{ initial: "7", md: "9" }} />
+					<Breadcrumbs
+						items={[
+							{ label: "Home", href: "/" },
+							{ label: "Apps", href: "/products" },
+							{ label: name, href: `/products/${product}` },
+							{ label: "Case studies", href: `/products/${product}/case-studies` },
+							{ label: frontmatter.metaTitle },
+						]}
+					/>
+					<MarketingCaption mb="1">{name} case study</MarketingCaption>
+					<MdxContent code={code} frontmatter={frontmatter} scope="primitives" />
+					{author && (
+						<Box mt="8">
+							<Text as="p" weight="bold">
+								{author}
+							</Text>
+							{authorPosition && <Text as="p">{authorPosition}</Text>}
 						</Box>
-
-						<Box position="relative" pt="7" mt={{ md: "9" }}>
-							<Box position="sticky" style={{ top: "var(--space-9)", left: 0 }}>
-								<Box mb="6">
-									<BoxLink
-										target="_blank"
-										href={`https://${extendedFrontmatter.companyUrl}`}
-										style={{ display: "inline-block", maxWidth: "380px" }}
-									>
-										<AccessibleIcon.Root label={`${extendedFrontmatter.metaTitle} homepage`}>
-											<CaseStudyLogo variant={extendedFrontmatter.companyLogoVariant} />
-										</AccessibleIcon.Root>
-									</BoxLink>
-								</Box>
-								<Box mb="5">
-									<Heading as="h4" size="3">
-										About
-									</Heading>
-									<Text as="p" mb="1">
-										{extendedFrontmatter.companyAbout}
-									</Text>
-
-									<Flex align="center" gap="2" asChild>
-										<Link
-											target="_blank"
-											href={`https://${extendedFrontmatter.companyUrl}`}
-											highContrast
-											color="gray"
-										>
-											{extendedFrontmatter.companyUrl}
-											<ArrowTopRightIcon style={{ marginLeft: -1, marginBottom: -2 }} />
-										</Link>
-									</Flex>
-								</Box>
-								<Box mb="5">
-									<Heading size="3" as="h4">
-										Founded
-									</Heading>
-									<Text as="p">{extendedFrontmatter.companyFounded}</Text>
-								</Box>
-								<Separator size="2" my="7" />
-								<Box mb="5">
-									<Text weight="bold" as="p">
-										Next case study
-									</Text>
-
-									<Link highContrast color="gray" asChild>
-										<NextLink href={`/${extendedFrontmatter.nextCaseStudySlug}` as Route}>
-											{extendedFrontmatter.nextCaseStudyTitle}
-										</NextLink>
-									</Link>
-								</Box>
-							</Box>
-						</Box>
-					</Grid>
+					)}
+					<Box mt="6">
+						<Link asChild highContrast color="gray">
+							<NextLink href={`/products/${product}/case-studies` as Route}>
+								← All {name} case studies
+							</NextLink>
+						</Link>
+					</Box>
 				</Section>
 
 				<Footer />

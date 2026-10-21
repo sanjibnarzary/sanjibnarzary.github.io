@@ -22,6 +22,8 @@ const socialLinks = [
 ];
 
 const projectLinks = [
+	{ label: "SeekGPT", href: "https://seekgpt.org" },
+	{ label: "Mobile Apps", href: "/products" },
 	{ label: "Echo Search", href: "https://echo.narzary.com" },
 	{ label: "Alayaran", href: "https://alayaran.com" },
 ];
@@ -43,7 +45,7 @@ export const Footer = () => (
 						size="2"
 						style={{ lineHeight: "20px", color: "var(--gray-10)", fontWeight: "inherit" }}
 					>
-						Dr. Sanjib Narzary — Computer Scientist, builder of apps and open source, from Kokrajhar,
+						Dr. Sanjib Narzary — Assistant Professor and tech enthusiast, builder of apps and open source, from Kokrajhar,
 						Assam.
 					</Heading>
 				</Box>

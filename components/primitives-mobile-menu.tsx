@@ -1,6 +1,5 @@
 "use client";
 import * as React from "react";
-import { primitivesRoutes } from "@utils/primitivesRoutes";
 import { Box, ScrollArea } from "@radix-ui/themes";
 import { DocsNav } from "./docs-nav";
 import { MobileMenu, type MobileMenuProps } from "./mobile-menu";
@@ -25,34 +24,26 @@ export const PrimitivesMobileMenu = (props: Omit<MobileMenuProps, "children">) =
 					{!mobileSearchOpen && (
 						<DocsNav
 							routes={[
+						{
+							pages: [
+								{ title: "Home", slug: "" },
+								{ title: "Research", slug: "research" },
+								{ title: "Projects", slug: "projects" },
+								{ title: "Apps", slug: "products" },
+								{ title: "Blog", slug: "blog" },
+							],
+						},
+						{
+							label: "Resources",
+							pages: [
 								{
-									pages: [
-										{
-											title: "Homepage",
-											slug: "primitives",
-										},
-										{
-											title: "Case studies",
-											slug: "primitives/case-studies",
-										},
-										{
-											title: "Blog",
-											slug: "blog",
-										},
-									],
+									title: "GitHub",
+									slug: "https://github.com/sanjibnarzary",
+									icon: <GitHubLogoIcon />,
 								},
-								...primitivesRoutes,
-								{
-									label: "Resources",
-									pages: [
-										{
-											title: "GitHub",
-											slug: "https://github.com/radix-ui/primitives",
-											icon: <GitHubLogoIcon />,
-										},
-									],
-								},
-							]}
+							],
+						},
+					]}
 						/>
 					)}
 				</Box>

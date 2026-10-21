@@ -39,9 +39,9 @@ export default function ThemesHome() {
 								<MainContent />
 							</ThemesHeroLayout.Main>
 
-							<ThemesHeroLayout.Showcase>
+							<ThemesHeroLayout.Main>
 								<SecondContent />
-							</ThemesHeroLayout.Showcase>
+							</ThemesHeroLayout.Main>
 						</ThemesHeroLayout.Root>
 					</Theme>
 				</MagicCurtain.Item>
@@ -90,7 +90,7 @@ const MainContent = () => (
 				</Flex>
 				<Box display={{ lg: "none" }}>
 					<SerifHeading mb="3">
-						Hello World!
+						Hello It's me!
 						<br />
 						Dr. Sanjib Narzary
 					</SerifHeading>
@@ -105,7 +105,7 @@ const MainContent = () => (
 							} as React.CSSProperties
 						}
 					>
-						Hello World!
+						Hello It's me!
 						<br />
 						Dr. Sanjib Narzary
 					</SerifHeading>

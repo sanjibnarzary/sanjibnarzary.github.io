@@ -13,14 +13,11 @@ export const BlogMobileMenu = (props: Omit<MobileMenuProps, "children">) => (
 					routes={[
 						{
 							pages: [
-								{
-									title: "Homepage",
-									slug: "",
-								},
-								{
-									title: "Blog",
-									slug: "blog",
-								},
+								{ title: "Home", slug: "" },
+								{ title: "Research", slug: "research" },
+								{ title: "Projects", slug: "projects" },
+								{ title: "Apps", slug: "products" },
+								{ title: "Blog", slug: "blog" },
 							],
 						},
 						{
@@ -28,7 +25,7 @@ export const BlogMobileMenu = (props: Omit<MobileMenuProps, "children">) => (
 							pages: [
 								{
 									title: "GitHub",
-									slug: "https://github.com/radix-ui/themes",
+									slug: "https://github.com/sanjibnarzary",
 									icon: <GitHubLogoIcon />,
 								},
 							],

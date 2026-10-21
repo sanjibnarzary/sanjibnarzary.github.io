@@ -3,6 +3,8 @@ import { Footer } from "@components/footer";
 import { MdxContent } from "@components/mdx-content";
 import { PrimitivesHeader } from "@components/primitives-header";
 import { PrimitivesMobileMenu } from "@components/primitives-mobile-menu";
+import { Breadcrumbs } from "@components/breadcrumbs";
+import { ProductSubNav } from "@components/product-sub-nav";
 import { baseMetadata } from "@utils/metadata";
 import {
 	getProductConfig,
@@ -41,6 +43,14 @@ export default async function ProductHome({ params }: PageProps) {
 			<PrimitivesHeader />
 			<Container mx={{ initial: "5", xs: "6", sm: "7", md: "9" }}>
 				<Section size={{ initial: "2", md: "4" }}>
+					<Breadcrumbs
+						items={[
+							{ label: "Home", href: "/" },
+							{ label: "Apps", href: "/products" },
+							{ label: getProductConfig(product).name },
+						]}
+					/>
+					<ProductSubNav product={product} />
 					<MdxContent code={code} frontmatter={frontmatter} scope="primitives" />
 				</Section>
 				<Footer />

@@ -1,5 +1,4 @@
 "use client";
-import { themesRoutes } from "@utils/themesRoutes";
 import { Box, ScrollArea } from "@radix-ui/themes";
 import { ThemesHeader } from "./themes-header";
 import { DocsNav } from "./docs-nav";
@@ -15,27 +14,19 @@ export const ThemesMobileMenu = (props: Omit<MobileMenuProps, "children">) => (
 					routes={[
 						{
 							pages: [
-								{
-									title: "Homepage",
-									slug: "",
-								},
-								{
-									title: "Playground",
-									slug: "themes/playground",
-								},
-								{
-									title: "Blog",
-									slug: "blog",
-								},
+								{ title: "Home", slug: "" },
+								{ title: "Research", slug: "research" },
+								{ title: "Projects", slug: "projects" },
+								{ title: "Apps", slug: "products" },
+								{ title: "Blog", slug: "blog" },
 							],
 						},
-						...themesRoutes,
 						{
 							label: "Resources",
 							pages: [
 								{
 									title: "GitHub",
-									slug: "https://github.com/radix-ui/themes",
+									slug: "https://github.com/sanjibnarzary",
 									icon: <GitHubLogoIcon />,
 								},
 							],
