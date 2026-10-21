@@ -22,84 +22,15 @@ export type RedirectRule = {
 };
 
 // Most specific first within each family; the matcher returns the first hit.
-export const REDIRECT_RULES: readonly RedirectRule[] = [
-	// Case studies moved under /primitives.
-	{ from: "/case-studies", to: "/primitives/case-studies", status: 308 },
-	{ from: "/case-studies/*", to: "/primitives/case-studies/:splat", status: 308 },
-
-	// Section roots.
-	{ from: "/primitives/docs", to: "/primitives/docs/overview/introduction", status: 307 },
-	{ from: "/themes", to: "/", status: 307 },
-	{ from: "/themes/docs", to: "/themes/docs/overview/getting-started", status: 307 },
-	{ from: "/colors/docs", to: "/colors/docs/overview/installation", status: 308 },
-	{ from: "/colors/docs/tests", to: "/colors", status: 308 },
-	{ from: "/colors/docs/tests/*", to: "/colors", status: 308 },
-
-	// Old /docs/<product> URLs.
-	{
-		from: "/docs/colors/palette-composition/the-scales",
-		to: "/colors/docs/palette-composition/scales",
-		status: 308,
-	},
-	{ from: "/docs/colors/getting-started", to: "/colors/docs/overview", status: 308 },
-	{ from: "/docs/colors/getting-started/*", to: "/colors/docs/overview/:splat", status: 308 },
-	// Vercel sent the bare `/docs/colors` through `/colors/docs/` to the
-	// installation page; skip the hop.
-	{ from: "/docs/colors", to: "/colors/docs/overview/installation", status: 308 },
-	{ from: "/docs/colors/*", to: "/colors/docs/:splat", status: 308 },
-	{ from: "/docs/primitives", to: "/primitives/docs/overview/introduction", status: 307 },
-	{
-		from: "/docs/primitives/utilities/aspect-ratio",
-		to: "/primitives/docs/components/aspect-ratio",
-		status: 308,
-	},
-	{
-		from: "/docs/primitives/utilities/aspect-ratio/*",
-		to: "/primitives/docs/components/aspect-ratio",
-		status: 308,
-	},
-	{
-		from: "/docs/primitives/utilities/label",
-		to: "/primitives/docs/components/label",
-		status: 308,
-	},
-	{
-		from: "/docs/primitives/utilities/label/*",
-		to: "/primitives/docs/components/label",
-		status: 308,
-	},
-	{ from: "/docs/primitives/*", to: "/primitives/docs/:splat", status: 308 },
-
-	// Versioned docs URLs from the primitives 1.x era.
-	{
-		from: "/primitives/docs/components/:slug/:version",
-		to: "/primitives/docs/components/:slug",
-		status: 308,
-	},
-	{
-		from: "/primitives/docs/utilities/:slug/:version",
-		to: "/primitives/docs/utilities/:slug",
-		status: 308,
-	},
-];
+// No legacy URLs are redirected on this site.
+export const REDIRECT_RULES: readonly RedirectRule[] = [];
 
 /**
  * Path prefixes the Worker must see for the rules above to run
  * (wrangler.jsonc `assets.run_worker_first`). Kept next to the rules so the
  * two cannot drift; the test checks every rule is covered.
  */
-export const REDIRECT_PATHS = [
-	"/case-studies",
-	"/case-studies/*",
-	"/colors/docs",
-	"/colors/docs/*",
-	"/docs/*",
-	"/primitives/docs",
-	"/primitives/docs/*",
-	"/themes",
-	"/themes/docs",
-	"/themes/docs/*",
-];
+export const REDIRECT_PATHS: string[] = [];
 
 export type Redirect = { location: string; status: 307 | 308 };
 

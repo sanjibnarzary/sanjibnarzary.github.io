@@ -13,7 +13,7 @@ const toPosix = (p: string) => p.split(path.sep).join("/");
 
 // Paths for which worker/index.ts negotiates Markdown (wrangler.jsonc
 // `assets.run_worker_first`); every HTML page below them needs a `.md` twin.
-const MARKDOWN_PREFIXES = ["primitives/docs/", "themes/docs/", "colors/docs/", "blog/"];
+const MARKDOWN_PREFIXES = ["products/", "blog/"];
 
 const REQUIRED_FILES = [
 	// Home page.
@@ -26,9 +26,8 @@ const REQUIRED_FILES = [
 	"search-index.json",
 	// The former proxy.ts / API route must not have come back as server code;
 	// a couple of representative pages and their Markdown twins.
-	"primitives/docs/components/dialog.html",
-	"primitives/docs/components/dialog.md",
-	"icons.html",
+	"research.html",
+	"about.html",
 ];
 
 const errors: string[] = [];

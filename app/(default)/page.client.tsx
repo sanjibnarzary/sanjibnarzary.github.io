@@ -82,8 +82,8 @@ const MainContent = () => (
 			<Box>
 				<Flex align="center" gap="2" mb="6">
 					<Badge asChild size="3" radius="full">
-						<NextLink href="/blog/themes-3">
-							Read about Radix Themes 3.0
+						<NextLink href="/research">
+							Read my published research
 							<ArrowRightIcon width="15" height="15" style={{ marginLeft: -2 }} />
 						</NextLink>
 					</Badge>
@@ -115,7 +115,7 @@ const MainContent = () => (
 			<Box style={{ maxWidth: 500 }}>
 				<Text size={{ initial: "4", xs: "5" }}>
 					<Text as="p" mb="5" color="gray">
-						Dr. Sanjib Narzary is serving as an Assistant Professor in the Department of Computer Science and Engineering at Central Institute of Technology Kokrajhar. In his spare time he develops mobile apps and web applications. He is passionate about using technology to solve real-world problems and improve people's lives.
+						Dr. Sanjib Narzary is serving as an Assistant Professor in the Department of Computer Science and Engineering at Central Institute of Technology Kokrajhar. In his spare time he develops mobile apps and web applications. He is passionate about using technology to solve real-world problems and improve people&apos;s lives.
 					</Text>
 
 					

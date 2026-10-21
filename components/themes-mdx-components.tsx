@@ -2,7 +2,6 @@ import { components } from "@components/mdx-components";
 import * as themesDocsAssets from "@components/themes-docs-assets";
 import * as themesDocsTables from "@components/themes-docs-tables";
 import * as icons from "@radix-ui/react-icons";
-import { ThemesPropsTable } from "./themes-props-table";
 import { ThemesUnofficialFigmaLibrary } from "./themes-unofficial-figma-library";
 import { ThemesUnofficialTailwindPlugin } from "./themes-unofficial-tailwind-plugin";
 import { Box, Text, Card } from "@radix-ui/themes";
@@ -16,11 +15,6 @@ export const ThemesMDXComponents = {
 	...icons,
 	ThemesUnofficialFigmaLibrary,
 	ThemesUnofficialTailwindPlugin,
-	ThemesPropsTable: (props: any) => (
-		<Box mt="4" mb="6">
-			<ThemesPropsTable {...props} />
-		</Box>
-	),
 	ThemesLinkCard: <T extends string>({
 		title,
 		desc,

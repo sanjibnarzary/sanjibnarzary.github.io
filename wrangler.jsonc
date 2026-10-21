@@ -28,16 +28,6 @@
 		// by its test) plus the docs/blog paths that negotiate Markdown (the former
 		// proxy.ts matcher). Everything else never invokes the script.
 		"run_worker_first": [
-			"/case-studies",
-			"/case-studies/*",
-			"/colors/docs",
-			"/colors/docs/*",
-			"/docs/*",
-			"/primitives/docs",
-			"/primitives/docs/*",
-			"/themes",
-			"/themes/docs",
-			"/themes/docs/*",
 			"/blog/*",
 		],
 	},

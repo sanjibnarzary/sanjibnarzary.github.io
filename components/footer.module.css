@@ -20,12 +20,16 @@
 	}
 }
 
-.RadixLogo {
+.Brand {
 	grid-column: 1 / -1;
 }
 
 @media (min-width: 900px) {
-	.RadixLogo {
+	.Brand {
 		grid-column: auto;
 	}
+}
+
+.Copyright {
+	grid-column: 1 / -1;
 }
