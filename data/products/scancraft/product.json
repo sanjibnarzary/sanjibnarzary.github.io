@@ -1,0 +1,14 @@
+{
+	"name": "ScanCraft: QR & Barcode Scanner",
+	"title": "ScanCraft: QR & Barcode Scanner",
+	"headline": "Scan QR codes and barcodes with ease.",
+	"description": "ScanCraft is a powerful QR and barcode scanner that allows you to quickly scan and decode various types of codes. It supports a wide range of barcode formats and provides a user-friendly interface for easy scanning and data retrieval.",
+	"ctaLabel": "Get started",
+	"ctaHref": "/products/scancraft/docs/overview/introduction",
+	"aliases": [
+		"scancraft"
+	],
+	"playStoreUrl": "https://play.google.com/store/apps/details?id=REPLACE_ME",
+	"appStoreUrl": "https://apps.apple.com/app/idREPLACE_ME",
+	"apkUrl": "#"
+}

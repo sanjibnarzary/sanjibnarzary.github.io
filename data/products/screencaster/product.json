@@ -1,0 +1,14 @@
+{
+	"name": "ScreenCaster: Cast your screen to TV",
+	"title": "ScreenCaster: Cast your screen to TV",
+	"headline": "Cast your screen to a TV with ease.",
+	"description": "ScreenCaster is a powerful screen casting tool that allows you to easily cast your screen to a TV. It supports a wide range of devices and provides a user-friendly interface for easy casting and control.",
+	"ctaLabel": "Get started",
+	"ctaHref": "/products/screencaster/docs/overview/introduction",
+	"aliases": [
+		"screencaster"
+	],
+	"playStoreUrl": "https://play.google.com/store/apps/details?id=REPLACE_ME",
+	"appStoreUrl": "https://apps.apple.com/app/idREPLACE_ME",
+	"apkUrl": "#"
+}
