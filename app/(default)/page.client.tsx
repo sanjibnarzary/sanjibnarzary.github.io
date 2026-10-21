@@ -173,7 +173,7 @@ const SecondContent = () => (
 				
 				<Box display={{ lg: "none" }}>
 					<SerifHeading mb="3">
-						Code, Sleep, Eat, Repeat!
+						Code, Eat, Sleep, Repeat!
 					</SerifHeading>
 				</Box>
 				<Box display={{ initial: "none", lg: "block" }}>
@@ -186,7 +186,7 @@ const SecondContent = () => (
 							} as React.CSSProperties
 						}
 					>
-						Code, Sleep, Eat, Repeat!
+						Code, Eat, Sleep, Repeat!
 					</SerifHeading>
 				</Box>
 			</Box>

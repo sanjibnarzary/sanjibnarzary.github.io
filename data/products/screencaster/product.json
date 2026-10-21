@@ -1,8 +1,8 @@
 {
-	"name": "ScreenVaster: Cast your screen to TV",
-	"title": "ScreenVaster: Cast your screen to TV",
+	"name": "ScreenCaster: Cast your screen to TV",
+	"title": "ScreenCaster: Cast your screen to TV",
 	"headline": "Cast your screen to a TV with ease.",
-	"description": "ScreenVaster is a powerful screen casting tool that allows you to easily cast your screen to a TV. It supports a wide range of devices and provides a user-friendly interface for easy casting and control.",
+	"description": "ScreenCaster is a powerful screen casting tool that allows you to easily cast your screen to a TV. It supports a wide range of devices and provides a user-friendly interface for easy casting and control.",
 	"ctaLabel": "Get started",
 	"ctaHref": "/products/screencaster/docs/overview/introduction",
 	"aliases": [

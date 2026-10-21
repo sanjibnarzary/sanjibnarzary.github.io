@@ -24,26 +24,27 @@ export const PrimitivesMobileMenu = (props: Omit<MobileMenuProps, "children">) =
 					{!mobileSearchOpen && (
 						<DocsNav
 							routes={[
-						{
-							pages: [
-								{ title: "Home", slug: "" },
-								{ title: "Research", slug: "research" },
-								{ title: "Projects", slug: "projects" },
-								{ title: "Apps", slug: "products" },
-								{ title: "Blog", slug: "blog" },
-							],
-						},
-						{
-							label: "Resources",
-							pages: [
 								{
-									title: "GitHub",
-									slug: "https://github.com/sanjibnarzary",
-									icon: <GitHubLogoIcon />,
+									pages: [
+										{ title: "Home", slug: "" },
+										{ title: "Research", slug: "research" },
+										{ title: "Projects", slug: "projects" },
+										{ title: "Teaching", slug: "teaching" },
+										{ title: "Apps", slug: "products" },
+										{ title: "Blog", slug: "blog" },
+									],
 								},
-							],
-						},
-					]}
+								{
+									label: "Resources",
+									pages: [
+										{
+											title: "GitHub",
+											slug: "https://github.com/sanjibnarzary",
+											icon: <GitHubLogoIcon />,
+										},
+									],
+								},
+							]}
 						/>
 					)}
 				</Box>

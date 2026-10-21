@@ -10,6 +10,7 @@ import styles from "./footer.module.css";
 const exploreLinks = [
 	{ label: "Home", href: "/" },
 	{ label: "Research", href: "/research" },
+	{ label: "Teaching", href: "/teaching" },
 	{ label: "Products", href: "/products" },
 	{ label: "About", href: "/about" },
 ] as const;
@@ -45,8 +46,8 @@ export const Footer = () => (
 						size="2"
 						style={{ lineHeight: "20px", color: "var(--gray-10)", fontWeight: "inherit" }}
 					>
-						Dr. Sanjib Narzary — Assistant Professor and tech enthusiast, builder of apps and open source, from Kokrajhar,
-						Assam.
+						Dr. Sanjib Narzary — Assistant Professor and tech enthusiast, builder of apps and open
+						source, from Kokrajhar, Assam.
 					</Heading>
 				</Box>
 			</Flex>
