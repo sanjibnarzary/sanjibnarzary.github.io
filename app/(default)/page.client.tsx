@@ -1,5 +1,5 @@
 "use client";
-import { Box, Flex, Theme, Text, Button, Section, Badge } from "@radix-ui/themes";
+import { Box, Flex, Theme, Text, Button, Section, Badge, Container } from "@radix-ui/themes";
 import * as React from "react";
 import NextLink from "next/link";
 import { ThemesHeader } from "@components/themes-header";
@@ -13,6 +13,7 @@ import { ThemesHeroLayout } from "@components/themes-hero-layout";
 import { ThemesMobileMenu } from "@components/themes-mobile-menu";
 import { ArrowRightIcon, GridIcon } from "@radix-ui/react-icons";
 import { CodeBlock } from "@components/code-block";
+import { Footer } from "@components/footer";
 
 export default function ThemesHome() {
 	const { resolvedTheme } = useTheme();
@@ -39,148 +40,15 @@ export default function ThemesHome() {
 							</ThemesHeroLayout.Main>
 
 							<ThemesHeroLayout.Showcase>
-								<Theme className="radix-themes-default-fonts" hasBackground={false}>
-									<ExampleThemesDashboard align="start" focusable={false} />
-								</Theme>
+								<SecondContent />
 							</ThemesHeroLayout.Showcase>
 						</ThemesHeroLayout.Root>
 					</Theme>
 				</MagicCurtain.Item>
 
-				<MagicCurtain.Item>
-					<Theme hasBackground accentColor="indigo" grayColor="slate" appearance={inverted}>
-						<Box height="0">
-							<ThemesHeader ghost />
-						</Box>
-
-						<ThemesHeroLayout.Root>
-							<ThemesHeroLayout.Background>
-								<BackgroundImage style={indigoBackgroundImageStyle} id="4" />
-							</ThemesHeroLayout.Background>
-
-							<ThemesHeroLayout.Main>
-								<MainContent />
-							</ThemesHeroLayout.Main>
-
-							<ThemesHeroLayout.Showcase>
-								<Theme className="radix-themes-default-fonts" hasBackground={false}>
-									<ExampleThemesDashboard align="start" focusable={false} />
-								</Theme>
-							</ThemesHeroLayout.Showcase>
-						</ThemesHeroLayout.Root>
-					</Theme>
-				</MagicCurtain.Item>
-
-				<MagicCurtain.Item>
-					<Theme hasBackground accentColor="cyan" grayColor="gray">
-						<Box height="0">
-							<ThemesHeader ghost />
-						</Box>
-
-						<ThemesHeroLayout.Root>
-							<ThemesHeroLayout.Background>
-								<BackgroundImage style={tealBackgroundImageStyle} id="5" />
-							</ThemesHeroLayout.Background>
-
-							<ThemesHeroLayout.Main>
-								<MainContent />
-							</ThemesHeroLayout.Main>
-
-							<ThemesHeroLayout.Showcase>
-								<Theme
-									className="radix-themes-default-fonts"
-									accentColor="gray"
-									grayColor="gray"
-									hasBackground={false}
-								>
-									<ExampleThemesEcommerce align="start" focusable={false} />
-								</Theme>
-							</ThemesHeroLayout.Showcase>
-						</ThemesHeroLayout.Root>
-					</Theme>
-				</MagicCurtain.Item>
-
-				<MagicCurtain.Item>
-					<Theme hasBackground accentColor="teal" grayColor="gray" appearance={inverted}>
-						<Box height="0">
-							<ThemesHeader ghost />
-						</Box>
-
-						<ThemesHeroLayout.Root>
-							<ThemesHeroLayout.Background>
-								<BackgroundImage style={tealBackgroundImageStyle} id="2" />
-							</ThemesHeroLayout.Background>
-
-							<ThemesHeroLayout.Main>
-								<MainContent />
-							</ThemesHeroLayout.Main>
-
-							<ThemesHeroLayout.Showcase>
-								<Theme
-									className="radix-themes-default-fonts"
-									accentColor="gray"
-									hasBackground={false}
-								>
-									<ExampleThemesEcommerce align="start" focusable={false} />
-								</Theme>
-							</ThemesHeroLayout.Showcase>
-						</ThemesHeroLayout.Root>
-					</Theme>
-				</MagicCurtain.Item>
-
-				<MagicCurtain.Item>
-					<Theme hasBackground accentColor="red" grayColor="slate">
-						<Box height="0">
-							<ThemesHeader ghost />
-						</Box>
-
-						<ThemesHeroLayout.Root>
-							<ThemesHeroLayout.Background>
-								<BackgroundImage style={redBackgroundImageStyle} id="3" />
-							</ThemesHeroLayout.Background>
-
-							<ThemesHeroLayout.Main>
-								<MainContent />
-							</ThemesHeroLayout.Main>
-
-							<ThemesHeroLayout.Showcase>
-								<Theme className="radix-themes-default-fonts" hasBackground={false}>
-									<ExampleThemesMusicApp align="start" focusable={false} />
-								</Theme>
-							</ThemesHeroLayout.Showcase>
-						</ThemesHeroLayout.Root>
-					</Theme>
-				</MagicCurtain.Item>
-
-				<MagicCurtain.Item>
-					<Theme hasBackground accentColor="red" grayColor="slate" appearance={inverted}>
-						<Box height="0">
-							<ThemesHeader ghost />
-						</Box>
-
-						<ThemesHeroLayout.Root>
-							<ThemesHeroLayout.Background>
-								<BackgroundImage style={redBackgroundImageStyle} id="6" />
-							</ThemesHeroLayout.Background>
-
-							<ThemesHeroLayout.Main>
-								<MainContent />
-							</ThemesHeroLayout.Main>
-
-							<ThemesHeroLayout.Showcase>
-								<Theme className="radix-themes-default-fonts" hasBackground={false}>
-									<ExampleThemesMusicApp align="start" focusable={false} />
-								</Theme>
-							</ThemesHeroLayout.Showcase>
-						</ThemesHeroLayout.Root>
-					</Theme>
-				</MagicCurtain.Item>
-
-				<Theme appearance="light" hasBackground={false}>
-					<MagicCurtain.Controls
-						images={resolvedTheme === "light" ? previewImages : previewImagesDarkMode}
-					/>
-				</Theme>
+			<Container>
+				<Footer />
+			</Container>
 			</MagicCurtain.Root>
 		</>
 	);
@@ -222,9 +90,9 @@ const MainContent = () => (
 				</Flex>
 				<Box display={{ lg: "none" }}>
 					<SerifHeading mb="3">
-						Start building
+						Hello World!
 						<br />
-						your app now
+						Dr. Sanjib Narzary
 					</SerifHeading>
 				</Box>
 				<Box display={{ initial: "none", lg: "block" }}>
@@ -237,9 +105,9 @@ const MainContent = () => (
 							} as React.CSSProperties
 						}
 					>
-						Start building
+						Hello World!
 						<br />
-						your app now
+						Dr. Sanjib Narzary
 					</SerifHeading>
 				</Box>
 			</Box>
@@ -247,8 +115,86 @@ const MainContent = () => (
 			<Box style={{ maxWidth: 500 }}>
 				<Text size={{ initial: "4", xs: "5" }}>
 					<Text as="p" mb="5" color="gray">
-						An open source component library optimized for fast development, easy maintenance, and
-						accessibility. Just import and go—no configuration required.
+						Dr. Sanjib Narzary is serving as an Assistant Professor in the Department of Computer Science and Engineering at Central Institute of Technology Kokrajhar. In his spare time he develops mobile apps and web applications. He is passionate about using technology to solve real-world problems and improve people's lives.
+					</Text>
+
+					
+				</Text>
+
+				<Flex gap="4" direction={{ initial: "column", xs: "row" }}>
+					<Button
+						asChild
+						size={{ initial: "3", xs: "4" }}
+						color="gray"
+						highContrast
+						style={{ flexGrow: 1 }}
+					>
+						<NextLink href="/about">
+							About Me
+							<svg
+								width="14"
+								height="14"
+								viewBox="0 0 12 12"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="currentcolor"
+								style={{ opacity: 1, marginRight: -3 }}
+							>
+								<path d="M6.39205 11.6023L5.36932 10.5909L8.92045 7.03977H0V5.5625H8.92045L5.36932 2.01705L6.39205 1L11.6932 6.30114L6.39205 11.6023Z" />
+							</svg>
+						</NextLink>
+					</Button>
+					<Button
+						asChild
+						size={{ initial: "3", xs: "4" }}
+						variant="soft"
+						highContrast
+						style={{ flexGrow: 1 }}
+					>
+						<NextLink href="https://cit.ac.in/profile-cse-dr-sanjib-narzary">
+							<GridIcon width="18" height="18" style={{ marginTop: 1 }} />
+							My Profile
+						</NextLink>
+					</Button>
+				</Flex>
+			</Box>
+
+			
+		</Section>
+	</Box>
+);
+const SecondContent = () => (
+	<Box>
+		<Section
+			size={{ initial: "2", md: "4", lg: "2" }}
+			pb={{ initial: "4", lg: "7" }}
+			mt={{ lg: "max(-160px, min(0px, calc(-0.2 * (100vh - 800px)))" }}
+		>
+			<Box>
+				
+				<Box display={{ lg: "none" }}>
+					<SerifHeading mb="3">
+						Code, Sleep, Eat, Repeat!
+					</SerifHeading>
+				</Box>
+				<Box display={{ initial: "none", lg: "block" }}>
+					<SerifHeading
+						mb="4"
+						style={
+							{
+								lineHeight: 0.9,
+								"--heading-font-size-adjust": 1.3,
+							} as React.CSSProperties
+						}
+					>
+						Code, Sleep, Eat, Repeat!
+					</SerifHeading>
+				</Box>
+			</Box>
+
+			<Box style={{ maxWidth: 500 }}>
+				<Text size={{ initial: "4", xs: "5" }}>
+					<Text as="p" mb="5" color="gray">
+						Love to code and build things. In my spare time, I enjoy building small, practical projects. 
 					</Text>
 
 					<Box mb="5">
@@ -276,8 +222,8 @@ const MainContent = () => (
 						highContrast
 						style={{ flexGrow: 1 }}
 					>
-						<NextLink href="/themes/docs/overview/getting-started">
-							Get started
+						<NextLink href="/products">
+							Products
 							<svg
 								width="14"
 								height="14"
@@ -297,22 +243,15 @@ const MainContent = () => (
 						highContrast
 						style={{ flexGrow: 1 }}
 					>
-						<NextLink href="/themes/playground">
+						<NextLink href="https://seekgpt.org">
 							<GridIcon width="18" height="18" style={{ marginTop: 1 }} />
-							Playground
+							SeekGPT
 						</NextLink>
 					</Button>
+					
 				</Flex>
 			</Box>
 
-			<ThemesHeroLayout.Controls>
-				<Text weight="bold" size="3" style={{ pointerEvents: "none" }}>
-					Live examples
-				</Text>
-				<Box mx="-1">
-					<MagicCurtain.MirrorControls />
-				</Box>
-			</ThemesHeroLayout.Controls>
 		</Section>
 	</Box>
 );
@@ -357,14 +296,16 @@ const redBackgroundImageStyle = {
 //   transform: 'scaleY(-0.5) scaleX(-1) rotate(-15deg)',
 
 const codeExample = `
-import "@radix-ui/themes/styles.css";
-import { Theme, Button } from "@radix-ui/themes";
-
-export default () => (
-	<Theme>
-		<Button>Hey 👋</Button>
-	</Theme>
-);
+from seekgpt import SeekGPT
+client = SeekGPT(
+    api_base="https://api.seekgpt.org/v1",
+    api_key="sk-7302d0fc2623cd5c4dbbb29ed54a4f03", 
+    default_model="gpt-5", 
+)
+response = client.chat(
+    messages=[{"role": "user", "content": "Hello SeekGPT!"}]
+)
+print(response['choices'][0]['message']['content'])
 `.trim();
 
 const BackgroundImage = ({

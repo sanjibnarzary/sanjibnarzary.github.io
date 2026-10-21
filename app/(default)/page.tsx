@@ -4,9 +4,9 @@ import ThemesHome from "./page.client";
 
 export const metadata: Metadata = {
 	...baseMetadata,
-	title: "Narzary Mobile First App Development",
+	title: "Dr. Sanjib Narzary | Mobile App Development Side Project",
 	description:
-		"Narzary is a mobile-first app development company that specializes in creating high-quality, user-friendly mobile applications for iOS and Android platforms. Our team of experienced developers and designers work closely with clients to understand their unique needs and deliver custom solutions that meet their business goals.",
+		"Dr. Sanjib Narzary is serving as an Assistant Professor in the Department of Computer Science and Engineering at Central Institute of Technology Kokrajhar. In his spare time he develops mobile apps and web applications. He is passionate about using technology to solve real-world problems and improve people's lives.",
 };
 
 export default function Page() {
