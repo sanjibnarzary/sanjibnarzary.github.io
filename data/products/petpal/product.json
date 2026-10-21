@@ -1,5 +1,5 @@
 {
-	"name": "PetPal",
+	"name": "PetPal: Virtual Pet Companion",
 	"title": "PetPal: Virtual Pet Companion Assistant",
 	"headline": "Your virtual pet companion that helps you stay connected with your furry friend",
 	"description": "PetPal is a virtual pet companion that helps you stay connected with your furry friend. It provides a range of features to keep your pet happy and healthy, including feeding reminders, activity tracking, and virtual playtime.",
@@ -10,5 +10,5 @@
 	],
 	"playStoreUrl": "https://play.google.com/store/apps/details?id=REPLACE_ME",
 	"appStoreUrl": "https://apps.apple.com/app/idREPLACE_ME",
-	"apkUrl": "/downloads/petpal.apk"
+	"apkUrl": "#"
 }

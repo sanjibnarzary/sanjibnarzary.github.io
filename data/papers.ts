@@ -148,15 +148,4 @@ export const papers: Paper[] = [
 		venue: "International Conference on Computing Methodologies and Communication (ICCMC)",
 		year: 2019,
 	},
-	{
-		id: "narzary2016tea",
-		type: "journal",
-		authors: ["Narzary, S."],
-		title: "A study on the status of growth and development of tea industry in Assam",
-		venue: "International Journal of Humanities and Social Science",
-		volume: "3",
-		number: "4",
-		pages: "1-7",
-		year: 2016,
-	},
 ];

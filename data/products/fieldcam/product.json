@@ -1,14 +1,14 @@
 {
-	"name": "GPS Camera Map",
-	"title": "GPS Camera Map",
+	"name": "FieldCam GPS Camera",
+	"title": "FieldCam: GPS Camera",
 	"headline": "Capture every photo with its location",
 	"description": "Stamp photos with GPS coordinates, address, date and time, and a map preview. GPS Camera Map is a mobile app that allows you to take photos and videos and automatically embed location data into the image metadata. It also provides a map view of where each photo was taken.",
 	"ctaLabel": "Get started",
-	"ctaHref": "/products/gps-map-camera/docs/overview/introduction",
+	"ctaHref": "/products/fieldcam/docs/overview/introduction",
 	"aliases": [
-		"gps-camera-map"
+		"fieldcam"
 	],
 	"playStoreUrl": "https://play.google.com/store/apps/details?id=REPLACE_ME",
 	"appStoreUrl": "https://apps.apple.com/app/idREPLACE_ME",
-	"apkUrl": "/downloads/gps-camera-map.apk"
+	"apkUrl": "#"
 }
