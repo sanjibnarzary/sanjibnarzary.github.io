@@ -1,7 +1,13 @@
-import { getProductConfig, getProductSlugParams, productBase } from "@utils/products";
+import {
+	getProductConfig,
+	getProductSlugParams,
+	hasProductGuides,
+	productBase,
+} from "@utils/products";
 import { Footer } from "@components/footer";
 import { Breadcrumbs } from "@components/breadcrumbs";
 import { MdxContent } from "@components/mdx-content";
+import { ProductSubNav } from "@components/product-sub-nav";
 import { PrimitivesHeader } from "@components/primitives-header";
 import { PrimitivesMobileMenu } from "@components/primitives-mobile-menu";
 import { MarketingCaption } from "@components/marketing/marketing-caption";
@@ -50,6 +56,7 @@ export default async function CaseStudy({ params }: PageProps) {
 							{ label: frontmatter.metaTitle },
 						]}
 					/>
+					<ProductSubNav product={product} hasGuides={hasProductGuides(product)} />
 					<MarketingCaption mb="1">{name} case study</MarketingCaption>
 					<MdxContent code={code} frontmatter={frontmatter} scope="primitives" />
 					{author && (

@@ -72,12 +72,12 @@ export const getProductPage = (product: string, page: string) =>
 
 // alternate URL slugs for a product's home page (declared as "aliases" in product.json)
 export const getProductHomeParams = () =>
-	getProductSlugs().flatMap((product) => [
-		product,
-		...(getProductConfig(product).aliases ?? []),
-	]);
+	getProductSlugs().flatMap((product) => [product, ...(getProductConfig(product).aliases ?? [])]);
 
 export const resolveProductSlug = (slug: string) =>
 	getProductSlugs().find(
 		(product) => product === slug || getProductConfig(product).aliases?.includes(slug),
 	) ?? slug;
+
+export const hasProductGuides = (product: string) =>
+	fs.existsSync(path.join(PRODUCTS_PATH, product, "guides.mdx"));

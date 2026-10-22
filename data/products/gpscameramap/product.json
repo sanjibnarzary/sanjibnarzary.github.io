@@ -1,0 +1,19 @@
+{
+	"name": "Narzary GPS Camera Map",
+	"title": "Narzary: GPS Camera Map",
+	"headline": "Capture every photo with its location",
+	"description": "Stamp photos with GPS coordinates, address, date and time, and a map preview. GPS Camera Map is a mobile app that allows you to take photos and videos and automatically embed location data into the image metadata. It also provides a map view of where each photo was taken.",
+	"ctaLabel": "Get started",
+	"ctaHref": "/products/fieldcam/docs/overview/introduction",
+	"aliases": [
+		"gpscameramap",
+		"gps-camera-map",
+		"gps-camera",
+		"gps-camera-app",
+		"gps-camera-android",
+		"gps-camera-ios"
+	],
+	"playStoreUrl": "https://play.google.com/store/apps/details?id=com.narzary.gpscameramap",
+	"appStoreUrl": "https://apps.apple.com/app/idREPLACE_ME",
+	"apkUrl": "#"
+}

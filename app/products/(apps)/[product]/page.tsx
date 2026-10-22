@@ -11,6 +11,7 @@ import {
 	getProductHomeParams,
 	getProductPage,
 	resolveProductSlug,
+	hasProductGuides,
 } from "@utils/products";
 import type { Metadata } from "next";
 
@@ -50,7 +51,7 @@ export default async function ProductHome({ params }: PageProps) {
 							{ label: getProductConfig(product).name },
 						]}
 					/>
-					<ProductSubNav product={product} />
+					<ProductSubNav product={product} hasGuides={hasProductGuides(product)} />
 					<MdxContent code={code} frontmatter={frontmatter} scope="primitives" />
 				</Section>
 				<Footer />

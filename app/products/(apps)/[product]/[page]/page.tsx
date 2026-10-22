@@ -6,7 +6,13 @@ import { PrimitivesMobileMenu } from "@components/primitives-mobile-menu";
 import { Breadcrumbs } from "@components/breadcrumbs";
 import { ProductSubNav } from "@components/product-sub-nav";
 import { baseMetadata } from "@utils/metadata";
-import { getProductConfig, getProductPage, getProductPages, getProductSlugs } from "@utils/products";
+import {
+	getProductConfig,
+	getProductPage,
+	getProductPages,
+	getProductSlugs,
+	hasProductGuides,
+} from "@utils/products";
 import type { Metadata } from "next";
 
 interface PageProps {
@@ -41,7 +47,7 @@ export default async function ProductPage({ params }: PageProps) {
 							{ label: frontmatter.metaTitle },
 						]}
 					/>
-					<ProductSubNav product={product} />
+					<ProductSubNav product={product} hasGuides={hasProductGuides(product)} />
 					<MdxContent code={code} frontmatter={frontmatter} scope="primitives" />
 				</Section>
 				<Footer />
