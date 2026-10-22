@@ -1,0 +1,14 @@
+{
+	"name": "Narzary Scan: Doc, ID Card & Book Scanner",
+	"title": "Narzary Scan: Doc, ID Card & Book Scanner",
+	"headline": "Scan documents, ID cards, and books with ease.",
+	"description": "Narzary Scan is a powerful scanning tool that allows you to easily scan documents, ID cards, and books. It supports a wide range of devices and provides a user-friendly interface for easy scanning and control.",
+	"ctaLabel": "Get started",
+	"ctaHref": "/products/docscan/docs/overview/introduction",
+	"aliases": [
+		"docscan"
+	],
+	"playStoreUrl": "https://play.google.com/store/apps/details?id=REPLACE_ME",
+	"appStoreUrl": "https://apps.apple.com/app/idREPLACE_ME",
+	"apkUrl": "#"
+}
