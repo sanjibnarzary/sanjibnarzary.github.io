@@ -137,10 +137,10 @@ export default function Page() {
 					>
 						<Box style={{ textAlign: "center" }}>
 							<img
-								src="https://cit.ac.in/uploads/users/images/1755229478.jpg"
-								alt="Dr. Sanjib Narzary"
+								src="/images/books.webp"
+								alt="Library books"
 								width="280"
-								height="280"
+								height="380"
 								style={{
 									width: "100%",
 									maxWidth: 280,
@@ -148,7 +148,7 @@ export default function Page() {
 									aspectRatio: "1",
 									objectFit: "cover",
 									objectPosition: "center top",
-									borderRadius: "50%",
+									borderRadius: "10%",
 								}}
 							/>
 						</Box>

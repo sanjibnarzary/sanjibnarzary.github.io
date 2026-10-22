@@ -10,17 +10,26 @@ const pages = [
 	{ label: "Privacy", slug: "privacy" },
 	{ label: "Terms", slug: "terms" },
 	{ label: "People Who Love Us", slug: "case-studies" },
+	{ label: "User Guides", slug: "guides" },
 ];
 
-export const ProductSubNav = ({ product }: { product: string }) => {
+export const ProductSubNav = ({
+	product,
+	hasGuides = false,
+}: {
+	product: string;
+	hasGuides?: boolean;
+}) => {
+	const visiblePages = pages.filter((p) => p.slug !== "guides" || hasGuides);
 	const pathname = usePathname() ?? "";
-	const last = pathname.split("/").filter(Boolean).pop();
-	const activeSlug = pages.some((p) => p.slug && p.slug === last) ? last : "";
+	const segments = pathname.split("/").filter(Boolean);
+	const last = segments[2];
+	const activeSlug = visiblePages.some((p) => p.slug && p.slug === last) ? last : "";
 
 	return (
 		<Flex asChild gap="5" mb="5" wrap="wrap">
 			<nav aria-label="App pages">
-				{pages.map(({ label, slug }) => (
+				{visiblePages.map(({ label, slug }) => (
 					<Link
 						key={label}
 						asChild
