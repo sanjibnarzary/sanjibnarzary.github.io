@@ -2,6 +2,7 @@
 	"name": "Uniview: Unified document reader",
 	"title": "Uniview: Unified document reader",
 	"headline": "View and manage all your documents in one place.",
+	"image": "https://picsum.photos/seed/uniview/640/360",
 	"description": "Uniview is a unified document reader that allows you to view and manage all your documents in one place. It supports a wide range of file formats and provides a user-friendly interface for easy navigation and organization.",
 	"ctaLabel": "Get started",
 	"ctaHref": "/products/uniview/docs/overview/introduction",

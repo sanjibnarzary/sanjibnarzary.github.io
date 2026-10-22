@@ -2,6 +2,7 @@
 	"name": "YogaPose: Yoga Pose Guide",
 	"title": "YogaPose: Yoga Pose Guide",
 	"headline": "Learn and practice yoga poses with ease.",
+	"image": "https://picsum.photos/seed/yogapose/640/360",
 	"description": "YogaPose is a comprehensive yoga pose guide that allows you to learn and practice various yoga poses. It provides detailed instructions and visual aids to help you master each pose.",
 	"ctaLabel": "Get started",
 	"ctaHref": "/products/yogapose/docs/overview/introduction",

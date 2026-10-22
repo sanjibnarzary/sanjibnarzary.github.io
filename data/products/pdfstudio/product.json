@@ -2,6 +2,7 @@
 	"name": "PDFStudio: Narzary PDF, Merge, Split, Edit, Annotate, Sign",
 	"title": "PDFStudio: Narzary PDF, Merge, Split, Edit, Annotate, Sign",
 	"headline": "Edit and annotate your PDFs with ease.",
+	"image": "https://picsum.photos/seed/pdfstudio/640/360",
 	"description": "PDFStudio is a comprehensive PDF editor that allows you to merge, split, edit, annotate, and sign PDF documents. It provides a user-friendly interface for easy manipulation and customization of your PDF files.",
 	"ctaLabel": "Get started",
 	"ctaHref": "/products/pdfstudio/docs/overview/introduction",
