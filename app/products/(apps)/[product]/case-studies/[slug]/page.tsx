@@ -76,6 +76,9 @@ export default async function CaseStudy({ params }: PageProps) {
 					</Box>
 				</Section>
 
+				
+			</Container>
+			<Container>
 				<Footer />
 			</Container>
 		</>
