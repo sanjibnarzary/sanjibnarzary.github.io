@@ -56,4 +56,4 @@ Welcome to **Narzary GPS Camera Map** ("Application", "we", "us", or "our"). By 
 For feedback, questions, or support regarding Narzary GPS Camera Map:
 - **Developer:** Sanjib Narzary
 - **Location:** Kokrajhar, Bodoland Territorial Region (BTR), Assam, India
-- **Email:** sanjibofcit@gmail.com
+- **Email:** support@narzary.com
