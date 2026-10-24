@@ -36,6 +36,7 @@ export function generateStaticParams() {
 // The product home page is rendered from data/products/<product>/index.mdx
 export default async function ProductHome({ params }: PageProps) {
 	const product = resolveProductSlug((await params).product);
+	const productConfig = getProductConfig(product);
 	const { frontmatter, code } = await getProductPage(product, "index");
 
 	return (
@@ -48,7 +49,7 @@ export default async function ProductHome({ params }: PageProps) {
 						items={[
 							{ label: "Home", href: "/" },
 							{ label: "Apps", href: "/products" },
-							{ label: getProductConfig(product).name },
+							{ label: productConfig.name },
 						]}
 					/>
 					<ProductSubNav product={product} hasGuides={hasProductGuides(product)} />

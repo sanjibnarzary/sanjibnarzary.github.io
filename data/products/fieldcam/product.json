@@ -2,6 +2,7 @@
 	"name": "FieldCam GPS Camera",
 	"title": "FieldCam: GPS Camera",
 	"headline": "Capture every photo with its location",
+	"icon": "/apps-icons/cinecam.jpeg",
 	"image": "https://picsum.photos/seed/fieldcam/640/360",
 	"description": "Stamp photos with GPS coordinates, address, date and time, and a map preview. GPS Camera Map is a mobile app that allows you to take photos and videos and automatically embed location data into the image metadata. It also provides a map view of where each photo was taken.",
 	"ctaLabel": "Get started",

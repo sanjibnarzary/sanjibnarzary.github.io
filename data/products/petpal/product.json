@@ -2,6 +2,7 @@
 	"name": "PetPal: Virtual Pet Companion",
 	"title": "PetPal: Virtual Pet Companion Assistant",
 	"headline": "Your virtual pet companion that helps you stay connected with your furry friend",
+	"icon": "/apps-icons/petpal.jpeg",
 	"image": "https://picsum.photos/seed/petpal/640/360",
 	"description": "PetPal is a virtual pet companion that helps you stay connected with your furry friend. It provides a range of features to keep your pet happy and healthy, including feeding reminders, activity tracking, and virtual playtime.",
 	"ctaLabel": "Get started",
