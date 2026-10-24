@@ -81,4 +81,4 @@ export const resolveProductSlug = (slug: string) =>
 	) ?? slug;
 
 export const hasProductGuides = (product: string) =>
-	fs.existsSync(path.join(PRODUCTS_PATH, product, "guides.mdx"));
+	getAllFrontmatter(productBase(product, "docs/guides")).length > 0;
