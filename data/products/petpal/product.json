@@ -1,15 +1,13 @@
 {
-	"name": "PetPal: Virtual Pet Companion",
-	"title": "PetPal: Virtual Pet Companion Assistant",
-	"headline": "Your virtual pet companion that helps you stay connected with your furry friend",
+	"name": "PetPal Assistant",
+	"title": "PetPal Assistant: Virtual Screen Pet",
+	"headline": "A virtual pet companion for focus, tasks, and wellness reminders.",
 	"icon": "/apps-icons/petpal.jpeg",
 	"image": "https://picsum.photos/seed/petpal/640/360",
-	"description": "PetPal is a virtual pet companion that helps you stay connected with your furry friend. It provides a range of features to keep your pet happy and healthy, including feeding reminders, activity tracking, and virtual playtime.",
+	"description": "PetPal is an animated virtual pet that floats over other apps and supports task rewards, motivational quotes, voice interaction, and wellness reminders.",
 	"ctaLabel": "Get started",
 	"ctaHref": "/products/petpal/docs/overview/introduction",
-	"aliases": [
-		"petpal"
-	],
+	"aliases": ["petpal"],
 	"playStoreUrl": "https://play.google.com/store/apps/details?id=REPLACE_ME",
 	"appStoreUrl": "https://apps.apple.com/app/idREPLACE_ME",
 	"apkUrl": "#"
