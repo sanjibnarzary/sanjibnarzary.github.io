@@ -1,15 +1,13 @@
 {
-	"name": "PDFStudio: Narzary PDF, Merge, Split, Edit, Annotate, Sign",
-	"title": "PDFStudio: Narzary PDF, Merge, Split, Edit, Annotate, Sign",
-	"headline": "Edit and annotate your PDFs with ease.",
+	"name": "Narzary PDF Studio Pro",
+	"title": "Narzary PDF Studio Pro",
+	"headline": "An offline workspace for PDF pages, annotations, scans, and conversions.",
 	"icon": "/apps-icons/pdfstudio.jpeg",
 	"image": "https://picsum.photos/seed/pdfstudio/640/360",
 	"description": "PDFStudio is a comprehensive PDF editor that allows you to merge, split, edit, annotate, and sign PDF documents. It provides a user-friendly interface for easy manipulation and customization of your PDF files.",
 	"ctaLabel": "Get started",
 	"ctaHref": "/products/pdfstudio/docs/overview/introduction",
-	"aliases": [
-		"pdfstudio"
-	],
+	"aliases": ["pdfstudio"],
 	"playStoreUrl": "https://play.google.com/store/apps/details?id=REPLACE_ME",
 	"appStoreUrl": "https://apps.apple.com/app/idREPLACE_ME",
 	"apkUrl": "#"
