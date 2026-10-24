@@ -10,8 +10,21 @@ metaDescription: PetPal Pet Virtual Assistant that motivates you.
 	rendering the content underneath inert.
 </Description>
 
-<HeroContainer>
-	<DialogDemo />
+<HeroContainer
+	style={{
+		backgroundImage: "linear-gradient(135deg, #9a3412 0%, #be185d 100%)",
+	}}
+>
+	<div style={{ width: "100%", textAlign: "center" }}>
+		<img
+			src="/apps-icons/petpal.jpeg"
+			alt="PetPal app icon"
+			width="112"
+			height="112"
+			style={{ display: "block", margin: "0 auto 24px", borderRadius: 24 }}
+		/>
+		<DialogDemo />
+	</div>
 </HeroContainer>
 
 <HeroCodeBlock folder="Dialog" />

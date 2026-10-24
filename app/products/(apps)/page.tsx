@@ -54,12 +54,27 @@ export default function ProductsIndex() {
                       mb="4"
                       style={{
                         aspectRatio: "16 / 9",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
                         borderRadius: "var(--radius-3)",
                         overflow: "hidden",
                         background: "var(--gray-3)",
                       }}
                     >
-                      {product.image ? (
+                      {product.icon ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          src={product.icon}
+                          alt={`${product.name} app icon`}
+                          style={{
+                            width: 112,
+                            height: 112,
+                            objectFit: "contain",
+                            borderRadius: "var(--radius-4)",
+                          }}
+                        />
+                      ) : product.image ? (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img
                           src={product.image}

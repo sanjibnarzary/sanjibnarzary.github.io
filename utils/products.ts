@@ -30,6 +30,7 @@ export interface ProductConfig {
 	description: string;
 	ctaLabel: string;
 	ctaHref: string;
+	icon?: string;
 	image?: string;
 	playStoreUrl?: string;
 	appStoreUrl?: string;
