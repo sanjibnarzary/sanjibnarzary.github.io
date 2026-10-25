@@ -1,0 +1,15 @@
+{
+	"name": "FluidClean: Clean your device with ease",
+	"title": "FluidClean: Clean your device with ease",
+	"headline": "Clean your device with ease.",
+	"image": "https://picsum.photos/seed/fluidclean/640/360",
+	"description": "FluidClean is a powerful cleaning tool that allows you to easily clean your device. It supports a wide range of devices and provides a user-friendly interface for easy cleaning and control.",
+	"ctaLabel": "Get started",
+	"ctaHref": "/products/fluidclean/docs/overview/introduction",
+	"aliases": [
+		"fluidclean"
+	],
+	"playStoreUrl": "https://play.google.com/store/apps/details?id=REPLACE_ME",
+	"appStoreUrl": "https://apps.apple.com/app/idREPLACE_ME",
+	"apkUrl": "#"
+}
