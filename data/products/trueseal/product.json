@@ -1,0 +1,17 @@
+{
+	"name": "TrueSeal: Sign and Verify Documents",
+	"title": "TrueSeal: Sign and Verify Documents",
+	"headline": "Sign and verify documents with confidence.",
+	"icon": "/apps-icons/trueseal.jpeg",
+	"image": "https://picsum.photos/seed/trueseal/640/360",
+	"description": "TrueSeal is a powerful document signing and verification tool that ensures the authenticity and integrity of your important documents. With advanced cryptographic techniques, it provides a secure way to sign and verify documents.",
+
+	"ctaLabel": "Get started",
+	"ctaHref": "/products/trueseal/docs/overview/introduction",
+	"aliases": [
+		"trueseal"
+	],
+	"playStoreUrl": "https://play.google.com/store/apps/details?id=com.narzary.trueseal",
+	"appStoreUrl": "https://apps.apple.com/app/idREPLACE_ME",
+	"apkUrl": "#"
+}

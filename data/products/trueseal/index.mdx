@@ -1,0 +1,96 @@
+---
+metaTitle: "TrueSeal: Sign and verify documents"
+metaDescription: TrueSeal is an enterprise-grade, self-custodial cryptographic digital signature and verification platform built with modern Android, Jetpack Compose, Room, and Firebase. It empowers individuals, developers, legal professionals, and organizations to cryptographically seal and verify documents, PDFs, images, archives, and arbitrary data with mathematically provable authenticity and non-repudiation.
+---
+
+# TrueSeal: Sign and verify your documents
+
+<Description>
+	is an enterprise-grade, self-custodial cryptographic digital signature and verification platform built with modern Android, Jetpack Compose, Room, and Firebase. It empowers individuals, developers, legal professionals, and organizations to cryptographically seal and verify documents, PDFs, images, archives, and arbitrary data with mathematically provable authenticity and non-repudiation.
+</Description>
+
+<HeroContainer
+	style={{
+		backgroundImage: "linear-gradient(135deg, #166534 0%, #3c19d5 100%)",
+	}}
+>
+	<div
+		style={{
+			maxWidth: 640,
+			padding: "0 24px",
+			textAlign: "center",
+			color: "white",
+		}}
+	>
+		<img
+			src="/apps-icons/trueseal.jpeg"
+			alt="TrueSeal app icon"
+			width="112"
+			height="112"
+			style={{ display: "block", margin: "0 auto 24px", borderRadius: 24 }}
+		/>
+		<div style={{ fontSize: 22, lineHeight: 1.5, fontWeight: 500 }}>
+			Easy way to sign and verify documents using cryptographic signatures.
+		</div>
+	</div>
+</HeroContainer>
+
+**TrueSeal** is an enterprise-grade, self-custodial cryptographic digital signature and verification platform built with modern Android, Jetpack Compose, Room, and Firebase. It empowers individuals, developers, legal professionals, and organizations to cryptographically seal and verify documents, PDFs, images, archives, and arbitrary data with mathematically provable authenticity and non-repudiation.
+
+---
+
+## 🔒 Core Cryptographic Architecture
+
+- **Asymmetric Signature Scheme**: NIST P-256 (secp256r1) Elliptic Curve Digital Signature Algorithm (`SHA256withECDSA`).
+- **Universal DSC & eSign Verifier**: Automated verification of standard PDF Digital Signature Certificates (DSC) including **Aadhaar eSign**, **e-PAN Digital Signatures**, **Income Tax Return (ITR-V)** DSCs, **Govt / CCA Certified DSCs**, and standard PKCS#7 / PAdES signatures.
+- **Cryptographic Hashing**: FIPS 180-4 Secure Hash Standard (SHA-256) digest computed stream-by-stream.
+- **Hardware-Backed Self-Custody**: Private keys are generated and held exclusively inside device-local secure hardware; private keys **never** transit network sockets or third-party servers.
+- **Passphrase Encryption (BIP-39 Style)**: Private key vault encrypted using **AES-256-GCM** with keys derived via **PBKDF2WithHmacSHA256** (12,000 iterations and cryptographic salt).
+- **12-Word Mnemonic Recovery**: Deterministic mnemonic phrase backup with a mandatory pre-activation verification challenge.
+- **Tamper Detection & Verification**: Instant cross-user signature verification with a prominent **Big Green Verified Badge** on authenticity and an alert **Red Cross Warning** on any file alteration (even 1-bit drift).
+- **Configurable Watermark Overlay**: Customizable in Settings as **Multi-line** (default) or **Single-line** (clean, non-wrapping) across **6 positions** (Bottom Right [default], Bottom Center, Bottom Left, Top Right, Top Center, Top Left).
+
+---
+
+## 🚀 System File Intent Integration ("Open With")
+
+TrueSeal integrates natively into Android's system file manager and share sheets:
+- **Open with TrueSeal Verify**: Directly open any PDF, signed copy, or certificate from the Android system files to inspect signature validity, certificate hierarchy, and byte-range integrity.
+- **TrueSeal Sign Document**: Directly select any document, image, or file from system files to sign and stamp it with TrueSeal's local cryptographic keys.
+
+---
+
+## 📁 Separate File Managers & Verification Audit
+
+TrueSeal includes two dedicated file managers:
+1. **Exported Files (File Manager)**:
+   - Dedicated screen showing all exported signed files, embedded copies, and standalone `.trueseal` certificates.
+   - Filter by format (PDFs, Images, Certificates).
+   - Quick actions to open in external viewer, share, re-verify integrity, or delete.
+2. **Verified Documents History**:
+   - Comprehensive audit trail of all verified documents and DSCs.
+   - Filter by status (Valid, Tampered/Invalid) and category (Aadhaar/Govt DSC, TrueSeal).
+   - Detailed certificate audit inspection (Common Name, Organization, Issuer CA, Signing Timestamp, Serial Number, Byte-Range coverage).
+   - Shareable verification proof reports.
+
+---
+
+## 💳 Regional Currency & Subscription Rules
+
+- **Region-Aware Pricing**: Shows **strictly INR (₹)** for Indian users (₹79/mo, ₹699/yr, ₹6,999 lifetime) and **strictly USD ($)** for the rest of the world ($1/mo, $9/yr, $99 lifetime).
+- **Smart Pro State**: When an account is active in Pro, upgrade prompts are cleanly hidden.
+- **10-Day Expiry Notice**: Renewal alerts and options only display when the subscription is within 10 days of expiration.
+
+---
+
+## 📁 Supported File Formats
+
+| Category | Supported Formats |
+|---|---|
+| **Documents** | PDF (including DSC/Aadhaar/e-PAN/ITR), DOCX, DOC, TXT, MD, RTF, ODT, HTML |
+| **Images** | PNG, JPEG, JPG, WEBP, SVG, GIF, BMP, TIFF, HEIC |
+| **Media** | MP4, MP3, WAV, MKV, MOV, FLAC, AAC, AVI |
+| **Archives** | ZIP, TAR, GZ, 7Z, BZ2, RAR, APK, AAB |
+| **Raw Text** | Smart contract declarations, messages, legal statements |
+
+---

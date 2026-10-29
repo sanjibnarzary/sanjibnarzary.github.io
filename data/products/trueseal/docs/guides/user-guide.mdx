@@ -1,0 +1,118 @@
+---
+metaTitle: User Guides for TrueSeal
+metaDescription: A comprehensive operational manual for end-users, legal verifiers, auditors, and enterprises.
+---
+# TrueSeal Complete User & Auditor Guides
+
+A comprehensive operational manual for end-users, legal verifiers, auditors, and enterprises.
+
+---
+
+## Guide 1: First-Time Onboarding & Cryptographic Key Custody
+
+### Objective
+Create a secure, self-custodial NIST P-256 Elliptic Curve key pair protected by an optional passphrase and backed up with a 12-word mnemonic phrase.
+
+1. **Launch TrueSeal**:
+   Upon first launch, you are presented with the **Self-Custodial Identity** wizard.
+2. **Enter Signer Information**:
+   - Provide your **Signer Name / Handle** (e.g., "Dr. Sanjib Narzary").
+   - (Optional) Provide your email address for cross-reference in the public registry.
+3. **Configure Passphrase Encryption (Recommended)**:
+   - Enter a memorable passphrase.
+   - Confirm the passphrase.
+   - *Note*: If enabled, your private key is encrypted with **AES-256-GCM** using PBKDF2 with 12,000 iterations.
+4. **Record the 12-Word Mnemonic Phrase**:
+   - 12 random words will be generated in ordered slots (1 through 12).
+   - Write these down on paper or in a trusted offline password manager.
+5. **Pass the Backup Verification Challenge**:
+   - TrueSeal requires you to pass a 3-word verification quiz to confirm safe storage.
+   - Select the matching words and tap **Confirm & Launch Wallet**.
+
+---
+
+## Guide 2: Cryptographically Signing Documents & Direct System Intent
+
+### Objective
+Sign any document, PDF, image, archive, or message directly within TrueSeal or straight from your device's file manager.
+
+### Option A: Direct from System File Manager ("Open with TrueSeal Sign Document")
+1. Open your Android device's **Files**, **Downloads**, or **Google Drive**.
+2. Tap on any document or file.
+3. Select **Open With** or **Share** -> choose **TrueSeal Sign Document**.
+4. TrueSeal will open with the file preloaded, compute its SHA-256 digest, apply the configurable watermark overlay, and prepare it for sealing.
+
+### Option B: Within the TrueSeal Application
+1. From the **Dashboard**, tap **Sign File** (or choose **Raw Text** for text declarations).
+2. Tap **Select File to Sign** to choose your target file.
+3. Review the computed SHA-256 digest and access level.
+4. Enter your passphrase (if configured) and tap **Sign with Local Cryptographic Key**.
+5. Save or share:
+   - **Export Signed Copy**: Saves a copy with TrueSeal embedded signature metadata and watermark.
+   - **Save Standalone Certificate (.trueseal)**: Saves a JSON certificate bundle.
+   - Exported files automatically appear in your **Exported Files Manager**.
+
+---
+
+## Guide 3: Universal Digital Signature & DSC Verification ("Open with TrueSeal Verify")
+
+### Objective
+Verify standard digital signatures using DSC (Digital Signature Certificates) including **Aadhaar eSign**, **e-PAN**, **Income Tax Return (ITR-V)**, **Govt / CCA Certified DSCs**, or **TrueSeal ECDSA** signatures.
+
+### Option A: Direct from System Files ("Open with TrueSeal Verify")
+1. In your system files or email attachment, tap a signed PDF or document.
+2. Tap **Open With** -> choose **TrueSeal Verify**.
+3. TrueSeal will immediately inspect the PDF `/ByteRange` and `/Contents` dictionary, parse PKCS#7 X.509 certificates, verify cryptographic integrity, and present a detailed audit report:
+   - **Signer Common Name**
+   - **DSC Category** (e.g. Aadhaar eSign, e-PAN, ITR-V)
+   - **Issuer CA** (e-Mudhra, Capricorn, VSign, IDRBT, etc.)
+   - **Signing Time & Location**
+   - **ByteRange Coverage** (100% sealed)
+   - **Integrity Status** (Valid Green Seal or Tampered Warning)
+
+### Option B: Within the TrueSeal Application
+1. Tap **Verify** from the bottom bar or Dashboard.
+2. Choose **Verify File** and pick the file.
+3. TrueSeal runs automatic checks across embedded metadata, PDF DSC dictionaries, and the Cloud Public Key Registry.
+4. Tap **Share Proof** to generate a shareable verification audit report.
+5. All verification runs are automatically logged to the **Verified Documents History** manager.
+
+---
+
+## Guide 4: Configuring Overlay Watermark (Settings)
+
+### Objective
+Customize the visual signature watermark according to personal or institutional preferences.
+
+1. Open **Settings** -> navigate to **Overlay Watermark Preferences**.
+2. **Watermark Style**:
+   - **Multi-line (Default)**: Stacked format displaying signer name, organization, and verification status.
+   - **Single-line**: Unified inline format formatted cleanly to prevent text splitting or awkward wrapping.
+3. **Watermark Placement**:
+   - Choose between **6 positions**:
+     - Bottom-Right (Default)
+     - Bottom-Center
+     - Bottom-Left
+     - Top-Right
+     - Top-Center
+     - Top-Left
+4. Inspect the **Live Watermark Preview** box to see real-time rendering.
+
+---
+
+## Guide 5: File Managers & Audit Trail
+
+### 1. Exported Files (File Manager)
+- Access via **Dashboard -> Exported Files** or **Settings -> Exported Files**.
+- Displays all exported signed copies, embedded documents, and `.trueseal` certificates.
+- Filter by category: **All**, **PDFs**, **Images**, **Certificates**.
+- Actions: Open in external viewer, share, re-verify hash, or delete.
+
+### 2. Verified Documents History
+- Access via **Dashboard -> Verified History** or **Settings -> Verified Documents History**.
+- Displays complete chronological verification history.
+- Filter by: **All**, **Valid**, **Invalid/Tampered**, **Aadhaar/Govt DSC**, **TrueSeal**.
+- View full audit dialogues, copy SHA-256 hashes, re-verify, or share verification proofs.
+
+---
+
