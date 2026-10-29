@@ -1,0 +1,56 @@
+---
+metaTitle: Privacy
+metaDescription: Privacy information for TrueSeal document signer and verifier.
+---
+
+# Privacy Policy
+
+# TrueSeal Privacy Policy
+
+**Effective Date:** October 29, 2026
+
+At **TrueSeal**, privacy is not a policy add-on—it is the foundational cryptographic principle of our system architecture.
+
+---
+
+## 1. Zero-Knowledge Private Key Architecture
+
+1. **Hardware-Local Storage**: All asymmetric private keys (NIST P-256) are generated directly on your device hardware using secure random entropy generators and stored within device-encrypted storage.
+2. **No Network Transmission**: Private keys never leave your physical device. They are never transmitted across local Wi-Fi, mobile networks, or cloud servers.
+3. **Passphrase Protection**: When passphrase protection is enabled, private keys are encrypted using AES-256-GCM authenticated encryption. The salt, IV, and ciphertext are stored locally, and the encryption key is derived only in volatile memory during active signing operations.
+
+---
+
+## 2. Document & File Privacy
+
+1. **Local File Integrity**: When you sign, export, or verify documents, PDFs, images, archives, or media, the actual file content **never** leaves your phone or tablet.
+2. **Digest-Only Operations**: Only the mathematical cryptographic hash (SHA-256) of the document is processed for signature generation and verification.
+3. **Embedded and Detached Copies**: Signed files and certificates are saved locally on your device filesystem. They are never sent to any external server unless you explicitly share or export them.
+
+---
+
+## 3. Universal DSC Verification Privacy
+
+1. **On-Device DSC Parsing**: Verification of Digital Signature Certificates (DSC) from Aadhaar eSign, e-PAN, Income Tax Returns (ITR-V), and government/private CAs executes entirely on your device.
+2. **No Data Mining**: TrueSeal does not extract, index, or store personal Aadhaar, PAN, or financial numbers from documents. It only inspects the cryptographic byte-range seal and X.509 signature envelope to verify mathematical authenticity.
+
+---
+
+## 4. Cloud Public Key Registry (Optional)
+
+1. **Public Key Records**: If you opt in to synchronize your identity with the Cloud Registry via Google Sign-In, only your **Public Key** (`SubjectPublicKeyInfo` PEM), key fingerprint, handle name, and timestamp are published.
+2. **Public Verification Receipts**: Signed records designated as `public_read` publish only the public SHA-256 digest and signature to enable seamless third-party verification.
+3. **Zero Third-Party Trackers**: TrueSeal does not integrate third-party ad networks, telemetry trackers, or profiling SDKs.
+
+---
+
+## 5. Android Permissions
+
+- `INTERNET` & `ACCESS_NETWORK_STATE`: Required strictly for optional background synchronization of public keys and public verification receipts with Google Cloud Firestore.
+- `USE_BIOMETRIC`: Used strictly on-device to verify ownership through Android BiometricPrompt or KeyguardManager for quick access locking.
+
+---
+
+## 6. Developer & Security Inquiries
+
+For questions regarding data processing or security disclosures, contact Dr. Sanjib Narzary.
